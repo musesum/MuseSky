@@ -1,17 +1,3 @@
-41  tmutil deletelocalsnapshots 2019-06-21-155218
-342  cd /Users/warren/Dev/Tr3Graph
-343  git add .
-344  git remote add origin https://github.com/musesum/Tr3Graph.git
-345  git push -u origin master
-346  git init
-347  git add .
-348  git commit -m "first commit"
-349  git remote add origin https://github.com/musesum/Tr3Graph.git
-350  git push -u origin master
-351  cd /Users/warren/Dev/D3Graph
-352  git add .
-
-
 sky {
     main { frame:0  fps:(1...60=60)  run:1  }
     pipeline { drawScroll:"draw"  cellAverage:"compute"  colorize:"colorize"  render:"render"  }
