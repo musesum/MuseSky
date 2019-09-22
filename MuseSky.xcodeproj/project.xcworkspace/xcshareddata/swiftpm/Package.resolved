@@ -1,0 +1,25 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Par",
+        "repositoryURL": "https://github.com/musesum/Par.git",
+        "state": {
+          "branch": null,
+          "revision": "264dab767deb789650f8b3db08cf6aee190e038c",
+          "version": "0.1.10"
+        }
+      },
+      {
+        "package": "Tr3",
+        "repositoryURL": "https://github.com/musesum/Tr3.git",
+        "state": {
+          "branch": null,
+          "revision": "f4995d4f709f8703bdad42119376b4929352941b",
+          "version": "0.1.88"
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,46 @@
+sky {
+    main {
+        frame : 0
+        fps : (1...60=60)
+        run : 1
+    }
+    pipeline {
+        drawScroll  : "draw"
+        cellAverage : "compute"
+        colorize    : "colorize"
+        render      : "render"
+    }
+    dock {
+        fader average:1 melt timetunnel
+        zhabatinski slide fredkin brush
+        colorize scroll tile speed
+    }
+    colorize {
+        xfade : (0...1=0.5)
+        pal0 : "rgbK"
+        pal1 : "wKZ"
+    }
+    input {
+        azimuth : (x y):(-0.2...0.2=0)
+        force   : (0...0.5=0) -> sky.draw.brush.size
+        accel   : (x y z):(-0.3...0.3) { on : (0...1) }
+        radius  : (1...92=9)
+        tilt    : (0...1=0)
+    }
+    draw {
+        screen {
+            fillZero : 0
+            fillOne : -1
+        }
+        brush {
+            type  : "dot"
+            size  : (1...64=10)
+            press : (0...1=1)
+            index : (1...255=127) //<-(osc.tuio.z osc.manos˚z)
+        }
+        line {
+            prev : (x y):(0...1)
+            next : (x y):(0...1)
+        }
+    }
+}
