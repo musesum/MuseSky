@@ -12,7 +12,6 @@ import Par
 import Tr3
 import Tr3Thumb
 
-
 class SkyVC: UIViewController {
 
     static var shared: SkyVC!
@@ -35,6 +34,7 @@ class SkyVC: UIViewController {
         mtkView.frame = view.frame
         mtkView.enableSetNeedsDisplay = true
         mtkView.isPaused = true
+        mtkView.framebufferOnly = false
         view = mtkView
         
         pipeline = SkyPipeline.shared
@@ -51,9 +51,6 @@ class SkyVC: UIViewController {
         view.addSubview(skyView)
         SkyDraw.shared.initTr3(tr3Root)
         let _ = SkyMain.shared
-    }
-    override func viewDidDisappear(_ animated: Bool) {
-
     }
 
 
@@ -77,10 +74,7 @@ class SkyVC: UIViewController {
             }
         }
     }
-
     override var shouldAutorotate: Bool { false }
-
-
     override var prefersHomeIndicatorAutoHidden: Bool { return true }
     override var prefersStatusBarHidden: Bool { return true }
 }

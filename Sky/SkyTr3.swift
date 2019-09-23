@@ -27,6 +27,7 @@ class SkyTr3: NSObject {
             }
         }
         if let sky = root.findPath("sky") {
+        
             screenFillZero˚ = sky.findPath("draw.screen.fillZero")
             screenFillOne˚  = sky.findPath("draw.screen.fillOne")
 
@@ -50,34 +51,44 @@ class SkyTr3: NSObject {
         func parseFile(_ fileName:String) {
             Tr3Parse.shared.parseTr3(root,fileName)
         }
-        if true {
-            parseFile("sky.main")
-            parseFile("sky.shader")
-            parseFile("panel.cell")
-            
-            parseFile("panel.cell.fader")
-            parseFile("panel.cell.average")
-            parseFile("panel.cell.melt")
-            parseFile("panel.cell.timeTunnel")
-            parseFile("panel.cell.zhabatinski")
-            parseFile("panel.cell.slide")
-            parseFile("panel.cell.fredkin")
-            
-            parseFile("panel.cell.brush")
-            parseFile("panel.shader.colorize")
-            parseFile("panel.cell.scroll")
-            parseFile("panel.shader.tile")
-            parseFile("panel.speed")
-        }
-        else {
-             parseFile("Snapshot")
-        }
-        
-        print(root.makeScript(0,pretty:false))
-        // print(root.dumpScript(0,session:true))
+        #if true
+        parseFile("sky.main")
+        parseFile("sky.shader")
+        parseFile("panel.cell")
+
+        parseFile("panel.cell.fader")
+        parseFile("panel.cell.average")
+        parseFile("panel.cell.melt")
+        parseFile("panel.cell.timeTunnel")
+        parseFile("panel.cell.zhabatinski")
+        parseFile("panel.cell.slide")
+        parseFile("panel.cell.fredkin")
+
+        parseFile("panel.cell.brush")
+        parseFile("panel.shader.colorize")
+        parseFile("panel.cell.scroll")
+        parseFile("panel.shader.tile")
+        parseFile("panel.speed")
+        #else
+        parseFile("Snapshot")
+        #endif
+
+        saveSnapshot()
+
+        //let script = root.makeScript(0,pretty:false)
+        //print(script)
+    }
+
+    func captureScreen() {
     }
 
     func saveSnapshot() {
-        //let bundle = 
+
+        // capture upstream texture
+        // capture render texture and convert to icon
+
+        let script = root.makeScript(0,pretty:false)
+        MuFile.shared.saveFile("Snapshot.tr3", script:script)
+
     }
 }

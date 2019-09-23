@@ -1,4 +1,5 @@
 import MetalKit
+import Compression
 import MuMetal
 import Tr3
 
@@ -70,6 +71,23 @@ public class SkyPipeline: NSObject, MTKViewDelegate {
             setupDefaultPipeline()
         }
     }
+    // snapshot on framebuffer, drawTexture and skyGraph
+    func saveSnapshot() {
+
+        // save state on frameBufferOnly
+        let frameBufferOnlyPrior = mtkView?.framebufferOnly ?? true
+        mtkView?.framebufferOnly = false
+
+        renderSnapshot()  // take an image snapshot of framebuffer
+        drawSnapshot()    // take a texture snapshot of drawKernel
+
+        // restore state for frameBufferOnly
+        mtkView?.framebufferOnly = frameBufferOnlyPrior
+
+        // snapshot of Sky Graph
+        SkyTr3.shared.saveSnapshot()
+    }
+
     /// Create linked list of MetaNode to render scene
     func setupDefaultPipeline() {
 
@@ -106,6 +124,25 @@ public class SkyPipeline: NSObject, MTKViewDelegate {
             nodes[name] = node
         }
         return node
+    }
+
+    func renderSnapshot() {
+        if let renderNode = nodes["render"] as? MetaKernelRender,
+            let renderTex = renderNode.renderedTex,
+            let image = renderTex.toImage() {
+
+            let uiImage = UIImage(cgImage: image)
+            let _ = MuFile.shared.saveFile("Snapshot.png", image:uiImage)
+        }
+    }
+    func drawSnapshot() {
+        if  let drawNode = nodes["drawScroll"] as? MetaKernelDraw,
+            let drawTex = drawNode.drawTex {
+            
+            let (bytes,_,totalSize) = drawTex.bytes()
+            let data = Data.init(bytes: bytes, count: totalSize)
+            let _ = MuFile.shared.saveFile("Snapshot.tex", data:data)
+        }
     }
 
     func swap(inNode node: MetaNode) {

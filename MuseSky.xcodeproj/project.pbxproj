@@ -59,17 +59,20 @@
 		80704A7923378C1B0001617D /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80704A7723378C1A0001617D /* Metal.framework */; };
 		80704A7A23378C1B0001617D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80704A7823378C1B0001617D /* MetalKit.framework */; };
 		80704B3C23378DB40001617D /* Tr3 in Frameworks */ = {isa = PBXBuildFile; productRef = 80704B3B23378DB40001617D /* Tr3 */; };
-		80DC216F2337A77000B99CD9 /* MuDrawBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC216A2337A77000B99CD9 /* MuDrawBox.swift */; };
-		80DC21702337A77000B99CD9 /* MuDrawBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC216B2337A77000B99CD9 /* MuDrawBubble.swift */; };
-		80DC21712337A77000B99CD9 /* ColorRGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC216C2337A77000B99CD9 /* ColorRGBA.swift */; };
-		80DC21722337A77000B99CD9 /* MuBezel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC216D2337A77000B99CD9 /* MuBezel.swift */; };
-		80DC21732337A77000B99CD9 /* MuDrawCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80DC216E2337A77000B99CD9 /* MuDrawCircle.swift */; };
-		80DC21792337A84800B99CD9 /* MuColor in Frameworks */ = {isa = PBXBuildFile; productRef = 80DC21782337A84800B99CD9 /* MuColor */; };
-		80DC217B2337A84800B99CD9 /* MuCubic in Frameworks */ = {isa = PBXBuildFile; productRef = 80DC217A2337A84800B99CD9 /* MuCubic */; };
-		80DC217D2337A84800B99CD9 /* MuExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 80DC217C2337A84800B99CD9 /* MuExtensions */; };
-		80DC217F2337A84800B99CD9 /* MuMetal in Frameworks */ = {isa = PBXBuildFile; productRef = 80DC217E2337A84800B99CD9 /* MuMetal */; };
-		80DC21812337A84800B99CD9 /* MuUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 80DC21802337A84800B99CD9 /* MuUtilities */; };
-		80DC21832337A87100B99CD9 /* Tr3Thumb in Frameworks */ = {isa = PBXBuildFile; productRef = 80DC21822337A87100B99CD9 /* Tr3Thumb */; };
+		808E90C223384938004EB9C9 /* MuDrawBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E90BD23384938004EB9C9 /* MuDrawBox.swift */; };
+		808E90C323384938004EB9C9 /* MuDrawBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E90BE23384938004EB9C9 /* MuDrawBubble.swift */; };
+		808E90C423384938004EB9C9 /* ColorRGBA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E90BF23384938004EB9C9 /* ColorRGBA.swift */; };
+		808E90C523384938004EB9C9 /* MuBezel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E90C023384938004EB9C9 /* MuBezel.swift */; };
+		808E90C623384938004EB9C9 /* MuDrawCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E90C123384938004EB9C9 /* MuDrawCircle.swift */; };
+		808E90CC23384991004EB9C9 /* MuColor in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90CB23384991004EB9C9 /* MuColor */; };
+		808E90CE23384991004EB9C9 /* MuCubic in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90CD23384991004EB9C9 /* MuCubic */; };
+		808E90D023384991004EB9C9 /* MuExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90CF23384991004EB9C9 /* MuExtensions */; };
+		808E90D223384991004EB9C9 /* MuMetal in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90D123384991004EB9C9 /* MuMetal */; };
+		808E90D423384991004EB9C9 /* MuUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90D323384991004EB9C9 /* MuUtilities */; };
+		808E90D623384991004EB9C9 /* Tr3Thumb in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90D523384991004EB9C9 /* Tr3Thumb */; };
+		808E90D923384CCD004EB9C9 /* MuFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E90D823384CCD004EB9C9 /* MuFile.swift */; };
+		808E90DC2338B4D0004EB9C9 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90DB2338B4D0004EB9C9 /* ZIPFoundation */; };
+		808E90DE2338B532004EB9C9 /* FileManager+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E90DD2338B532004EB9C9 /* FileManager+extension.swift */; };
 		80DC21872337ADB000B99CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DC21852337ADB000B99CD9 /* LaunchScreen.storyboard */; };
 		80DC21882337ADB000B99CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DC21862337ADB000B99CD9 /* Main.storyboard */; };
 		80DC21892337AE9300B99CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80DC21842337ACFB00B99CD9 /* Assets.xcassets */; };
@@ -152,17 +155,19 @@
 		80704A5223378B000001617D /* panel.cell.timeTunnel.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.timeTunnel.tr3; sourceTree = "<group>"; };
 		80704A7723378C1A0001617D /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		80704A7823378C1B0001617D /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
-		80DC20CF2337A29C00B99CD9 /* Tr3Thumb */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Tr3Thumb; sourceTree = "<group>"; };
-		80DC21662337A66F00B99CD9 /* MuColor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuColor; path = "../Tr3Thumb (original)/MuColor"; sourceTree = "<group>"; };
-		80DC21672337A6F000B99CD9 /* MuUtilities */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuUtilities; path = "../Tr3Thumb (original)/MuUtilities"; sourceTree = "<group>"; };
-		80DC21682337A70300B99CD9 /* MuMetal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuMetal; path = "../Tr3Thumb (original)/MuMetal"; sourceTree = "<group>"; };
-		80DC216A2337A77000B99CD9 /* MuDrawBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawBox.swift; sourceTree = "<group>"; };
-		80DC216B2337A77000B99CD9 /* MuDrawBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawBubble.swift; sourceTree = "<group>"; };
-		80DC216C2337A77000B99CD9 /* ColorRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRGBA.swift; sourceTree = "<group>"; };
-		80DC216D2337A77000B99CD9 /* MuBezel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuBezel.swift; sourceTree = "<group>"; };
-		80DC216E2337A77000B99CD9 /* MuDrawCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawCircle.swift; sourceTree = "<group>"; };
-		80DC21742337A77B00B99CD9 /* MuExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuExtensions; path = "../Tr3Thumb (original)/MuExtensions"; sourceTree = "<group>"; };
-		80DC21772337A7FA00B99CD9 /* MuCubic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuCubic; path = "../Tr3Thumb (original)/MuCubic"; sourceTree = "<group>"; };
+		808E90BA23384927004EB9C9 /* MuColor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuColor; path = "../Mu Packages/MuColor"; sourceTree = "<group>"; };
+		808E90BB2338492D004EB9C9 /* MuCubic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuCubic; path = "../Mu Packages/MuCubic"; sourceTree = "<group>"; };
+		808E90BD23384938004EB9C9 /* MuDrawBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawBox.swift; sourceTree = "<group>"; };
+		808E90BE23384938004EB9C9 /* MuDrawBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawBubble.swift; sourceTree = "<group>"; };
+		808E90BF23384938004EB9C9 /* ColorRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRGBA.swift; sourceTree = "<group>"; };
+		808E90C023384938004EB9C9 /* MuBezel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuBezel.swift; sourceTree = "<group>"; };
+		808E90C123384938004EB9C9 /* MuDrawCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawCircle.swift; sourceTree = "<group>"; };
+		808E90C72338493D004EB9C9 /* MuExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuExtensions; path = "../Mu Packages/MuExtensions"; sourceTree = "<group>"; };
+		808E90C823384941004EB9C9 /* MuMetal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuMetal; path = "../Mu Packages/MuMetal"; sourceTree = "<group>"; };
+		808E90C923384946004EB9C9 /* MuUtilities */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuUtilities; path = "../Mu Packages/MuUtilities"; sourceTree = "<group>"; };
+		808E90CA2338494D004EB9C9 /* Tr3Thumb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tr3Thumb; path = "../Mu Packages/Tr3Thumb"; sourceTree = "<group>"; };
+		808E90D823384CCD004EB9C9 /* MuFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuFile.swift; sourceTree = "<group>"; };
+		808E90DD2338B532004EB9C9 /* FileManager+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+extension.swift"; sourceTree = "<group>"; };
 		80DC21842337ACFB00B99CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80DC21852337ADB000B99CD9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80DC21862337ADB000B99CD9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -173,15 +178,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80DC21792337A84800B99CD9 /* MuColor in Frameworks */,
-				80DC21812337A84800B99CD9 /* MuUtilities in Frameworks */,
-				80DC217F2337A84800B99CD9 /* MuMetal in Frameworks */,
+				808E90CC23384991004EB9C9 /* MuColor in Frameworks */,
+				808E90D423384991004EB9C9 /* MuUtilities in Frameworks */,
+				808E90D223384991004EB9C9 /* MuMetal in Frameworks */,
 				80704B3C23378DB40001617D /* Tr3 in Frameworks */,
-				80DC217D2337A84800B99CD9 /* MuExtensions in Frameworks */,
+				808E90D023384991004EB9C9 /* MuExtensions in Frameworks */,
 				80704A7923378C1B0001617D /* Metal.framework in Frameworks */,
-				80DC21832337A87100B99CD9 /* Tr3Thumb in Frameworks */,
+				808E90D623384991004EB9C9 /* Tr3Thumb in Frameworks */,
 				80704A7A23378C1B0001617D /* MetalKit.framework in Frameworks */,
-				80DC217B2337A84800B99CD9 /* MuCubic in Frameworks */,
+				808E90CE23384991004EB9C9 /* MuCubic in Frameworks */,
+				808E90DC2338B4D0004EB9C9 /* ZIPFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -205,14 +211,15 @@
 		807048DE23378A090001617D = {
 			isa = PBXGroup;
 			children = (
+				808E90D723384C94004EB9C9 /* MuFiles */,
 				8070497B23378ADB0001617D /* Scratch2.h */,
-				80DC21772337A7FA00B99CD9 /* MuCubic */,
-				80DC21742337A77B00B99CD9 /* MuExtensions */,
-				80DC21692337A77000B99CD9 /* MuDraw */,
-				80DC21682337A70300B99CD9 /* MuMetal */,
-				80DC21672337A6F000B99CD9 /* MuUtilities */,
-				80DC21662337A66F00B99CD9 /* MuColor */,
-				80DC20CF2337A29C00B99CD9 /* Tr3Thumb */,
+				808E90CA2338494D004EB9C9 /* Tr3Thumb */,
+				808E90C923384946004EB9C9 /* MuUtilities */,
+				808E90C823384941004EB9C9 /* MuMetal */,
+				808E90C72338493D004EB9C9 /* MuExtensions */,
+				808E90BC23384938004EB9C9 /* MuDraw */,
+				808E90BB2338492D004EB9C9 /* MuCubic */,
+				808E90BA23384927004EB9C9 /* MuColor */,
 				807048E923378A090001617D /* MuseSky */,
 				8070495B23378ADB0001617D /* Sky */,
 				80704A3023378B000001617D /* tr3 */,
@@ -349,17 +356,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		80DC21692337A77000B99CD9 /* MuDraw */ = {
+		808E90BC23384938004EB9C9 /* MuDraw */ = {
 			isa = PBXGroup;
 			children = (
-				80DC216A2337A77000B99CD9 /* MuDrawBox.swift */,
-				80DC216B2337A77000B99CD9 /* MuDrawBubble.swift */,
-				80DC216C2337A77000B99CD9 /* ColorRGBA.swift */,
-				80DC216D2337A77000B99CD9 /* MuBezel.swift */,
-				80DC216E2337A77000B99CD9 /* MuDrawCircle.swift */,
+				808E90BD23384938004EB9C9 /* MuDrawBox.swift */,
+				808E90BE23384938004EB9C9 /* MuDrawBubble.swift */,
+				808E90BF23384938004EB9C9 /* ColorRGBA.swift */,
+				808E90C023384938004EB9C9 /* MuBezel.swift */,
+				808E90C123384938004EB9C9 /* MuDrawCircle.swift */,
 			);
 			name = MuDraw;
-			path = "../Tr3Thumb (original)/MuDraw";
+			path = "../Mu Packages/MuDraw";
+			sourceTree = "<group>";
+		};
+		808E90D723384C94004EB9C9 /* MuFiles */ = {
+			isa = PBXGroup;
+			children = (
+				808E90D823384CCD004EB9C9 /* MuFile.swift */,
+				808E90DD2338B532004EB9C9 /* FileManager+extension.swift */,
+			);
+			path = MuFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -380,12 +396,13 @@
 			name = MuseSky;
 			packageProductDependencies = (
 				80704B3B23378DB40001617D /* Tr3 */,
-				80DC21782337A84800B99CD9 /* MuColor */,
-				80DC217A2337A84800B99CD9 /* MuCubic */,
-				80DC217C2337A84800B99CD9 /* MuExtensions */,
-				80DC217E2337A84800B99CD9 /* MuMetal */,
-				80DC21802337A84800B99CD9 /* MuUtilities */,
-				80DC21822337A87100B99CD9 /* Tr3Thumb */,
+				808E90CB23384991004EB9C9 /* MuColor */,
+				808E90CD23384991004EB9C9 /* MuCubic */,
+				808E90CF23384991004EB9C9 /* MuExtensions */,
+				808E90D123384991004EB9C9 /* MuMetal */,
+				808E90D323384991004EB9C9 /* MuUtilities */,
+				808E90D523384991004EB9C9 /* Tr3Thumb */,
+				808E90DB2338B4D0004EB9C9 /* ZIPFoundation */,
 			);
 			productName = MuseSky;
 			productReference = 807048E723378A090001617D /* Muse Sky.app */;
@@ -461,6 +478,7 @@
 			mainGroup = 807048DE23378A090001617D;
 			packageReferences = (
 				80704B3A23378DB40001617D /* XCRemoteSwiftPackageReference "Tr3" */,
+				808E90DA2338B4D0004EB9C9 /* XCRemoteSwiftPackageReference "ZIPFoundation" */,
 			);
 			productRefGroup = 807048E823378A090001617D /* Products */;
 			projectDirPath = "";
@@ -530,25 +548,26 @@
 				80704A0523378ADC0001617D /* SkyMain.swift in Sources */,
 				80704A0023378ADC0001617D /* WorkLink.swift in Sources */,
 				807049FA23378ADC0001617D /* SkyView.swift in Sources */,
+				808E90C523384938004EB9C9 /* MuBezel.swift in Sources */,
+				808E90C323384938004EB9C9 /* MuDrawBubble.swift in Sources */,
+				808E90DE2338B532004EB9C9 /* FileManager+extension.swift in Sources */,
 				807049F623378ADC0001617D /* pipeline.drawScroll.metal in Sources */,
-				80DC21722337A77000B99CD9 /* MuBezel.swift in Sources */,
-				80DC21732337A77000B99CD9 /* MuDrawCircle.swift in Sources */,
-				80DC216F2337A77000B99CD9 /* MuDrawBox.swift in Sources */,
 				807049F323378ADC0001617D /* cell.timetunnel.metal in Sources */,
 				807049EF23378ADC0001617D /* cell.average.metal in Sources */,
-				80DC21712337A77000B99CD9 /* ColorRGBA.swift in Sources */,
-				80DC21702337A77000B99CD9 /* MuDrawBubble.swift in Sources */,
 				807048EF23378A090001617D /* ViewController.swift in Sources */,
 				807048EB23378A090001617D /* AppDelegate.swift in Sources */,
 				80704A0123378ADC0001617D /* SkyPipeline.swift in Sources */,
 				807049ED23378ADC0001617D /* SkyTr3.swift in Sources */,
 				807048ED23378A090001617D /* SceneDelegate.swift in Sources */,
+				808E90C623384938004EB9C9 /* MuDrawCircle.swift in Sources */,
 				80704A0623378ADC0001617D /* SkyColor.swift in Sources */,
 				807049FE23378ADC0001617D /* SkyDraw.swift in Sources */,
+				808E90C223384938004EB9C9 /* MuDrawBox.swift in Sources */,
 				807049F523378ADC0001617D /* cell.zhabatinski.metal in Sources */,
 				807049F923378ADC0001617D /* cell.slide.metal in Sources */,
 				807049F223378ADC0001617D /* pipeline.colorize.metal in Sources */,
 				807049FD23378ADC0001617D /* TouchItem.swift in Sources */,
+				808E90C423384938004EB9C9 /* ColorRGBA.swift in Sources */,
 				807049FB23378ADC0001617D /* TouchFinger.swift in Sources */,
 				807049EE23378ADC0001617D /* cell.fredkin.metal in Sources */,
 				80704A0223378ADC0001617D /* SkyVC.swift in Sources */,
@@ -556,6 +575,7 @@
 				807049F023378ADC0001617D /* cell.modulo.metal in Sources */,
 				80704A0723378ADC0001617D /* SkyDock.swift in Sources */,
 				80704A0323378ADC0001617D /* SkyMetal.swift in Sources */,
+				808E90D923384CCD004EB9C9 /* MuFile.swift in Sources */,
 				807049F423378ADC0001617D /* cell.erode.metal in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -878,6 +898,14 @@
 				minimumVersion = 0.1.88;
 			};
 		};
+		808E90DA2338B4D0004EB9C9 /* XCRemoteSwiftPackageReference "ZIPFoundation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/weichsel/ZIPFoundation/";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.9.9;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -886,29 +914,34 @@
 			package = 80704B3A23378DB40001617D /* XCRemoteSwiftPackageReference "Tr3" */;
 			productName = Tr3;
 		};
-		80DC21782337A84800B99CD9 /* MuColor */ = {
+		808E90CB23384991004EB9C9 /* MuColor */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MuColor;
 		};
-		80DC217A2337A84800B99CD9 /* MuCubic */ = {
+		808E90CD23384991004EB9C9 /* MuCubic */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MuCubic;
 		};
-		80DC217C2337A84800B99CD9 /* MuExtensions */ = {
+		808E90CF23384991004EB9C9 /* MuExtensions */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MuExtensions;
 		};
-		80DC217E2337A84800B99CD9 /* MuMetal */ = {
+		808E90D123384991004EB9C9 /* MuMetal */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MuMetal;
 		};
-		80DC21802337A84800B99CD9 /* MuUtilities */ = {
+		808E90D323384991004EB9C9 /* MuUtilities */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MuUtilities;
 		};
-		80DC21822337A87100B99CD9 /* Tr3Thumb */ = {
+		808E90D523384991004EB9C9 /* Tr3Thumb */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = Tr3Thumb;
+		};
+		808E90DB2338B4D0004EB9C9 /* ZIPFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 808E90DA2338B4D0004EB9C9 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
+			productName = ZIPFoundation;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
