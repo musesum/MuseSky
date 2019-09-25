@@ -1,7 +1,8 @@
 import MetalKit
-import Compression
 import MuMetal
 import Tr3
+import Compression
+import ZIPFoundation
 
 /// metal draw/scroll + CA Rule + colorize + render pipleline
 public class SkyPipeline: NSObject, MTKViewDelegate {
@@ -72,7 +73,37 @@ public class SkyPipeline: NSObject, MTKViewDelegate {
         }
     }
     // snapshot on framebuffer, drawTexture and skyGraph
-    func saveSnapshot() {
+    func saveSnapshot(_ name:String, _ completion:@escaping (()->())) {
+
+        let time = trunc(Date().timeIntervalSince1970)
+        let archive = MuArchive(name + ".\(time).zip")
+
+        func renderSnapshot() {
+            if let renderNode = nodes["render"] as? MetaKernelRender,
+                let renderTex = renderNode.renderedTex,
+                let image = renderTex.toImage() {
+                let uiImage = UIImage(cgImage: image).rotatedIcon(128)
+                if let data = uiImage?.pngData() {
+                    archive.add(name + ".png", data:data)
+                }
+            }
+        }
+
+        func drawSnapshot() {
+            if  let drawNode = nodes["drawScroll"] as? MetaKernelDraw,
+                let drawTex = drawNode.drawTex {
+
+                let (bytes,_,totalSize) = drawTex.bytes()
+                let data = Data.init(bytes: bytes, count: totalSize)
+                archive.add(name + ".tex", data:data)
+            }
+        }
+
+        func tr3Snapshot() {
+            let script =  SkyTr3.shared.root.makeScript(0,pretty:false)
+            let data = Data(script.utf8)
+            archive.add(name + ".tr3", data:data)
+        }
 
         // save state on frameBufferOnly
         let frameBufferOnlyPrior = mtkView?.framebufferOnly ?? true
@@ -85,7 +116,8 @@ public class SkyPipeline: NSObject, MTKViewDelegate {
         mtkView?.framebufferOnly = frameBufferOnlyPrior
 
         // snapshot of Sky Graph
-        SkyTr3.shared.saveSnapshot()
+        tr3Snapshot()
+        completion()
     }
 
     /// Create linked list of MetaNode to render scene
@@ -124,25 +156,6 @@ public class SkyPipeline: NSObject, MTKViewDelegate {
             nodes[name] = node
         }
         return node
-    }
-
-    func renderSnapshot() {
-        if let renderNode = nodes["render"] as? MetaKernelRender,
-            let renderTex = renderNode.renderedTex,
-            let image = renderTex.toImage() {
-
-            let uiImage = UIImage(cgImage: image)
-            let _ = MuFile.shared.saveFile("Snapshot.png", image:uiImage)
-        }
-    }
-    func drawSnapshot() {
-        if  let drawNode = nodes["drawScroll"] as? MetaKernelDraw,
-            let drawTex = drawNode.drawTex {
-            
-            let (bytes,_,totalSize) = drawTex.bytes()
-            let data = Data.init(bytes: bytes, count: totalSize)
-            let _ = MuFile.shared.saveFile("Snapshot.tex", data:data)
-        }
     }
 
     func swap(inNode node: MetaNode) {

@@ -47,48 +47,45 @@ class SkyTr3: NSObject {
         }
     }
     func parseScripts() {
-        
-        func parseFile(_ fileName:String) {
-            Tr3Parse.shared.parseTr3(root,fileName)
+
+        let archive = MuArchive("Snapshot.zip", readOnly: true)
+        var script : String!
+        archive.get("Snapshot.tr3") { data in
+            script = String(data: data, encoding: .utf8)
         }
-        #if true
-        parseFile("sky.main")
-        parseFile("sky.shader")
-        parseFile("panel.cell")
+        if script != nil {
+            // parseFile("Snapshot")
+            if script.hasPrefix("√ { \n") {
+                script = String(script.dropFirst(5))
+                print(script!)
+            }
+            let _ = Tr3Parse.shared.parseScript(root, script, whitespace: "\n\t ")
+        }
+        else {
+            func parseFile(_ fileName:String) {
+                Tr3Parse.shared.parseTr3(root,fileName)
+            }
 
-        parseFile("panel.cell.fader")
-        parseFile("panel.cell.average")
-        parseFile("panel.cell.melt")
-        parseFile("panel.cell.timeTunnel")
-        parseFile("panel.cell.zhabatinski")
-        parseFile("panel.cell.slide")
-        parseFile("panel.cell.fredkin")
+            parseFile("sky.main")
+            parseFile("sky.shader")
+            parseFile("panel.cell")
 
-        parseFile("panel.cell.brush")
-        parseFile("panel.shader.colorize")
-        parseFile("panel.cell.scroll")
-        parseFile("panel.shader.tile")
-        parseFile("panel.speed")
-        #else
-        parseFile("Snapshot")
-        #endif
+            parseFile("panel.cell.fader")
+            parseFile("panel.cell.average")
+            parseFile("panel.cell.melt")
+            parseFile("panel.cell.timeTunnel")
+            parseFile("panel.cell.zhabatinski")
+            parseFile("panel.cell.slide")
+            parseFile("panel.cell.fredkin")
 
-        saveSnapshot()
-
+            parseFile("panel.cell.brush")
+            parseFile("panel.shader.colorize")
+            parseFile("panel.cell.scroll")
+            parseFile("panel.shader.tile")
+            parseFile("panel.speed")
+        }
         //let script = root.makeScript(0,pretty:false)
         //print(script)
     }
 
-    func captureScreen() {
-    }
-
-    func saveSnapshot() {
-
-        // capture upstream texture
-        // capture render texture and convert to icon
-
-        let script = root.makeScript(0,pretty:false)
-        MuFile.shared.saveFile("Snapshot.tr3", script:script)
-
-    }
 }

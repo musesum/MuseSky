@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import BackgroundTasks
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
@@ -37,7 +38,22 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     @available(iOS 13.0, *)
     func sceneWillResignActive(_ scene: UIScene) {
-        SkyPipeline.shared.saveSnapshot()
+        //scheduleSnapshot()
+        SkyPipeline.shared.saveSnapshot("Snapshot") {
+            //task.setTaskCompleted(success: true)
+        }
+    }
+
+    @available(iOS 13.0, *)
+    func scheduleSnapshot() {
+        let request = BGAppRefreshTaskRequest(identifier: "com.muse.MuseSky.snapshot")
+        request.earliestBeginDate = Date(timeIntervalSinceNow: 0)
+
+        do {
+            try BGTaskScheduler.shared.submit(request)
+        } catch {
+            print("Could not schedule app refresh: \(error)")
+        }
     }
 
     @available(iOS 13.0, *)

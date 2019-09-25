@@ -66,7 +66,6 @@
 		808E90C623384938004EB9C9 /* MuDrawCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E90C123384938004EB9C9 /* MuDrawCircle.swift */; };
 		808E90CC23384991004EB9C9 /* MuColor in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90CB23384991004EB9C9 /* MuColor */; };
 		808E90CE23384991004EB9C9 /* MuCubic in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90CD23384991004EB9C9 /* MuCubic */; };
-		808E90D023384991004EB9C9 /* MuExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90CF23384991004EB9C9 /* MuExtensions */; };
 		808E90D223384991004EB9C9 /* MuMetal in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90D123384991004EB9C9 /* MuMetal */; };
 		808E90D423384991004EB9C9 /* MuUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90D323384991004EB9C9 /* MuUtilities */; };
 		808E90D623384991004EB9C9 /* Tr3Thumb in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90D523384991004EB9C9 /* Tr3Thumb */; };
@@ -162,7 +161,6 @@
 		808E90BF23384938004EB9C9 /* ColorRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRGBA.swift; sourceTree = "<group>"; };
 		808E90C023384938004EB9C9 /* MuBezel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuBezel.swift; sourceTree = "<group>"; };
 		808E90C123384938004EB9C9 /* MuDrawCircle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawCircle.swift; sourceTree = "<group>"; };
-		808E90C72338493D004EB9C9 /* MuExtensions */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuExtensions; path = "../Mu Packages/MuExtensions"; sourceTree = "<group>"; };
 		808E90C823384941004EB9C9 /* MuMetal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuMetal; path = "../Mu Packages/MuMetal"; sourceTree = "<group>"; };
 		808E90C923384946004EB9C9 /* MuUtilities */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuUtilities; path = "../Mu Packages/MuUtilities"; sourceTree = "<group>"; };
 		808E90CA2338494D004EB9C9 /* Tr3Thumb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tr3Thumb; path = "../Mu Packages/Tr3Thumb"; sourceTree = "<group>"; };
@@ -182,7 +180,6 @@
 				808E90D423384991004EB9C9 /* MuUtilities in Frameworks */,
 				808E90D223384991004EB9C9 /* MuMetal in Frameworks */,
 				80704B3C23378DB40001617D /* Tr3 in Frameworks */,
-				808E90D023384991004EB9C9 /* MuExtensions in Frameworks */,
 				80704A7923378C1B0001617D /* Metal.framework in Frameworks */,
 				808E90D623384991004EB9C9 /* Tr3Thumb in Frameworks */,
 				80704A7A23378C1B0001617D /* MetalKit.framework in Frameworks */,
@@ -216,7 +213,6 @@
 				808E90CA2338494D004EB9C9 /* Tr3Thumb */,
 				808E90C923384946004EB9C9 /* MuUtilities */,
 				808E90C823384941004EB9C9 /* MuMetal */,
-				808E90C72338493D004EB9C9 /* MuExtensions */,
 				808E90BC23384938004EB9C9 /* MuDraw */,
 				808E90BB2338492D004EB9C9 /* MuCubic */,
 				808E90BA23384927004EB9C9 /* MuColor */,
@@ -398,7 +394,6 @@
 				80704B3B23378DB40001617D /* Tr3 */,
 				808E90CB23384991004EB9C9 /* MuColor */,
 				808E90CD23384991004EB9C9 /* MuCubic */,
-				808E90CF23384991004EB9C9 /* MuExtensions */,
 				808E90D123384991004EB9C9 /* MuMetal */,
 				808E90D323384991004EB9C9 /* MuUtilities */,
 				808E90D523384991004EB9C9 /* Tr3Thumb */,
@@ -921,10 +916,6 @@
 		808E90CD23384991004EB9C9 /* MuCubic */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = MuCubic;
-		};
-		808E90CF23384991004EB9C9 /* MuExtensions */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = MuExtensions;
 		};
 		808E90D123384991004EB9C9 /* MuMetal */ = {
 			isa = XCSwiftPackageProductDependency;
