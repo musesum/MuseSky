@@ -2,7 +2,7 @@ panel.shader.colorize {
     base {
         type  : "colorize"
         title : "Colorize"
-        frame : (x:0 y:0 w:320 h:176)
+        frame : (x:0 y:0 w:260 h:176)
         icon  : "icon.pal.main.png"
     }
     controls {
@@ -16,29 +16,23 @@ panel.shader.colorize {
         palFade {
             type  : "slider"
             title : "Palette Cross Fade"
-            frame : (x:64 y:50 w:192 h:44)
+            frame : (x:10 y:50 w:192 h:44)
             icon  : "icon.pearl.white.png"
             value : (0...1=0) <-> sky.colorize.xfade
             lag   : 0
         }
-        fillZero {
-            type  : "trigger"
-            title : "Fill Zero"
-            frame : (x:4 y:108 w:44 h:44)
-            icon  : "icon.drop.clear.png"
-            value : (0...1=0) -> sky.draw.screen.fillZero
-        }
+       
         bitplane {
             type  : "slider"
             title : "Bit Plane"
-            frame : (x:64 y:108 w:192 h:44)
+            frame : (x:10 y:106 w:192 h:44)
             icon  : "icon.pearl.white.png"
             value : (0...1=0) -> sky.shader.colorize.buffer.bitplane
         }
         fillOne {
             type  : "trigger"
             title : "Fill Ones"
-            frame : (x:266 y:108 w:44 h:44)
+            frame : (x:210 y:106 w:44 h:44)
             icon  : "icon.drop.gray.png"
             value : (0...1=0) -> sky.draw.screen.fillOne
         }
