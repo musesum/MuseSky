@@ -12,7 +12,7 @@ panel.cell.scroll {
             frame : (x:162 y:6 w:48 h:32)
             icon  : "icon.scroll.png"
             value : (0...1=0)
-            user  -> scrollBox.value:(x:0.5 y:0.5)
+            user  -> scrollBox.value:(x:0.5 y:0.5) -> brushTilt.value:0
             lag   : 0
         }
         hide {

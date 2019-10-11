@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		807048EB23378A090001617D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807048EA23378A090001617D /* AppDelegate.swift */; };
 		807048ED23378A090001617D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807048EC23378A090001617D /* SceneDelegate.swift */; };
-		807048EF23378A090001617D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807048EE23378A090001617D /* ViewController.swift */; };
 		8070490223378A0B0001617D /* MuseSkyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070490123378A0B0001617D /* MuseSkyTests.swift */; };
 		8070490D23378A0B0001617D /* MuseSkyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070490C23378A0B0001617D /* MuseSkyUITests.swift */; };
 		807049ED23378ADC0001617D /* SkyTr3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070495C23378ADB0001617D /* SkyTr3.swift */; };
@@ -75,6 +74,8 @@
 		80DC21872337ADB000B99CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DC21852337ADB000B99CD9 /* LaunchScreen.storyboard */; };
 		80DC21882337ADB000B99CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DC21862337ADB000B99CD9 /* Main.storyboard */; };
 		80DC21892337AE9300B99CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80DC21842337ACFB00B99CD9 /* Assets.xcassets */; };
+		80F846E1234D016A009022F7 /* cell.camera.metal in Sources */ = {isa = PBXBuildFile; fileRef = 80F846E0234D016A009022F7 /* cell.camera.metal */; };
+		80F846E3234D01D2009022F7 /* panel.cell.camera.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80F846E2234D01D2009022F7 /* panel.cell.camera.tr3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,7 +99,6 @@
 		807048E723378A090001617D /* Muse Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Muse Sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		807048EA23378A090001617D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		807048EC23378A090001617D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		807048EE23378A090001617D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		807048F823378A0B0001617D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		807048FD23378A0B0001617D /* MuseSkyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MuseSkyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8070490123378A0B0001617D /* MuseSkyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuseSkyTests.swift; sourceTree = "<group>"; };
@@ -169,6 +169,9 @@
 		80DC21842337ACFB00B99CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80DC21852337ADB000B99CD9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80DC21862337ADB000B99CD9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		80E0C3E5234D280D00372849 /* CameraView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		80F846E0234D016A009022F7 /* cell.camera.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = cell.camera.metal; sourceTree = "<group>"; };
+		80F846E2234D01D2009022F7 /* panel.cell.camera.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.camera.tr3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,7 +247,6 @@
 				80DC21862337ADB000B99CD9 /* Main.storyboard */,
 				807048EA23378A090001617D /* AppDelegate.swift */,
 				807048EC23378A090001617D /* SceneDelegate.swift */,
-				807048EE23378A090001617D /* ViewController.swift */,
 				807048F823378A0B0001617D /* Info.plist */,
 			);
 			path = MuseSky;
@@ -271,12 +273,13 @@
 		8070495B23378ADB0001617D /* Sky */ = {
 			isa = PBXGroup;
 			children = (
+				80E0C3E5234D280D00372849 /* CameraView.swift */,
+				8070497423378ADB0001617D /* SkyVC.swift */,
 				8070495C23378ADB0001617D /* SkyTr3.swift */,
+				8070497323378ADB0001617D /* SkyPipeline.swift */,
 				8070495D23378ADB0001617D /* Metal */,
 				8070496B23378ADB0001617D /* Touch */,
 				8070497223378ADB0001617D /* WorkLink.swift */,
-				8070497323378ADB0001617D /* SkyPipeline.swift */,
-				8070497423378ADB0001617D /* SkyVC.swift */,
 				8070497523378ADB0001617D /* SkyMetal.swift */,
 				8070497723378ADB0001617D /* SkyMain.swift */,
 				8070497823378ADB0001617D /* SkyColor.swift */,
@@ -288,6 +291,7 @@
 		8070495D23378ADB0001617D /* Metal */ = {
 			isa = PBXGroup;
 			children = (
+				80F846E0234D016A009022F7 /* cell.camera.metal */,
 				8070495E23378ADB0001617D /* MetalShaderTypes.h */,
 				8070495F23378ADB0001617D /* cell.fredkin.metal */,
 				8070496023378ADB0001617D /* cell.average.metal */,
@@ -319,6 +323,7 @@
 		80704A3023378B000001617D /* tr3 */ = {
 			isa = PBXGroup;
 			children = (
+				80F846E2234D01D2009022F7 /* panel.cell.camera.tr3 */,
 				80704A3123378B000001617D /* panel.cell.scroll.tr3 */,
 				80704A3223378B000001617D /* panel.shader.colorize.tr3 */,
 				80704A3323378B000001617D /* panel.cell.melt.tr3 */,
@@ -508,6 +513,7 @@
 				80704A5623378B000001617D /* panel.cell.fredkin.tr3 in Resources */,
 				80704A7223378B000001617D /* sky.main.tr3 in Resources */,
 				80704A5A23378B000001617D /* panel.cell.slide.tr3 in Resources */,
+				80F846E3234D01D2009022F7 /* panel.cell.camera.tr3 in Resources */,
 				80704A5F23378B000001617D /* panel.cell.drift.tr3 in Resources */,
 				80704A5E23378B000001617D /* panel.cell.tr3 in Resources */,
 				80704A5723378B000001617D /* panel.shader.tile.tr3 in Resources */,
@@ -549,7 +555,6 @@
 				807049F623378ADC0001617D /* pipeline.drawScroll.metal in Sources */,
 				807049F323378ADC0001617D /* cell.timetunnel.metal in Sources */,
 				807049EF23378ADC0001617D /* cell.average.metal in Sources */,
-				807048EF23378A090001617D /* ViewController.swift in Sources */,
 				807048EB23378A090001617D /* AppDelegate.swift in Sources */,
 				80704A0123378ADC0001617D /* SkyPipeline.swift in Sources */,
 				807049ED23378ADC0001617D /* SkyTr3.swift in Sources */,
@@ -568,6 +573,7 @@
 				80704A0223378ADC0001617D /* SkyVC.swift in Sources */,
 				807049F823378ADC0001617D /* pipeline.render.metal in Sources */,
 				807049F023378ADC0001617D /* cell.modulo.metal in Sources */,
+				80F846E1234D016A009022F7 /* cell.camera.metal in Sources */,
 				80704A0723378ADC0001617D /* SkyDock.swift in Sources */,
 				80704A0323378ADC0001617D /* SkyMetal.swift in Sources */,
 				808E90D923384CCD004EB9C9 /* MuFile.swift in Sources */,

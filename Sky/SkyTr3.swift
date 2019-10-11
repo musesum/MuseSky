@@ -19,6 +19,8 @@ class SkyTr3: NSObject {
         initScreenFill()
     }
 
+    /// fill screen callback to clear universe
+    
     func initScreenFill() {
 
         func fillDraw(_ value: Float?) {
@@ -82,6 +84,7 @@ class SkyTr3: NSObject {
             parseFile("panel.shader.colorize")
             parseFile("panel.cell.scroll")
             parseFile("panel.shader.tile")
+            //!!! parseFile("panel.cell.camera")
             parseFile("panel.speed")
         }
         //let script = root.makeScript(0,pretty:false)

@@ -174,7 +174,11 @@ class SkyDraw: NSObject {
     }
 
 
-    func drawTouch(_ bytes: UnsafeMutablePointer<UInt32>, size: CGSize) {
+    /// either fill or draw inside texture
+    ///
+    /// - return: true if filled, false if drawn
+    /// 
+    func drawTouch(_ bytes: UnsafeMutablePointer<UInt32>, size: CGSize) -> Bool {
 
         let w = Int(size.width)
         let h = Int(size.height)
@@ -185,6 +189,7 @@ class SkyDraw: NSObject {
             for i in 0 ..< (w*h) {
                 bytes[i] = val
             }
+            return true
         }
         else if fillValue >= 0 {
 
@@ -194,6 +199,7 @@ class SkyDraw: NSObject {
             for i in 0 ..< (w*h) {
                 bytes[i] = val
             }
+            return true
         }
         else {
 
@@ -222,6 +228,7 @@ class SkyDraw: NSObject {
             // .BBBBBBBBBBBBB.
 
             for y in 0 ..< h {
+
                 let l0 = y * w          // left edge
                 let l1 = l0+1           // left content to copy to right edge
                 let r0 = l0 + w - 1     // right edge
@@ -231,6 +238,7 @@ class SkyDraw: NSObject {
                 bytes[r0] = bytes[l1]   // copy left content to right edge
             }
             for x in 0 ..< w {
+                
                 let t0 = x              // top edge
                 let t1 = t0 + w         // top content to copy to bottom edge
                 let b0 = x + (h-1) * w  // bottom edge
@@ -240,6 +248,7 @@ class SkyDraw: NSObject {
                 bytes[b0] = bytes[t1]   // copy top content to bottom edge
             }
         }
+        return false // didn't fill
     }
 
 }
