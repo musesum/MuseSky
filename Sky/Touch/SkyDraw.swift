@@ -8,51 +8,51 @@ class SkyDraw: NSObject {
 
     static var shared = SkyDraw()
 
-    var go˚         : Tr3?
-    var brushTilt˚  : Tr3?
-    var brushPress˚ : Tr3?
-    var brushSize˚  : Tr3?
+    var go˚: Tr3?
+    var brushTilt˚: Tr3?
+    var brushPress˚: Tr3?
+    var brushSize˚: Tr3?
 
-    var linePrev˚   : Tr3?          // beginning of line
-    var lineNext˚   : Tr3?          // end of line
-    var inForce˚    : Tr3?          // pressure
-    var inRadius˚   : Tr3?          // finger radius
-    var inAzimuth˚  : Tr3?          // apple pencil
+    var linePrev˚: Tr3?            // beginning of line
+    var lineNext˚: Tr3?            // end of line
+    var inForce˚: Tr3?             // pressure
+    var inRadius˚: Tr3?            // finger radius
+    var inAzimuth˚: Tr3?           // apple pencil
 
-    var brushTilt   = false         // via brushTilt˚
-    var brushPress  = true          // via brushPress˚
-    var brushSize   = CGFloat(1)    // via brushSize˚
+    var brushTilt = false          // via brushTilt˚
+    var brushPress = true          // via brushPress˚
+    var brushSize = CGFloat(1)     // via brushSize˚
 
-    var linePrev    = CGPoint.zero  // via linePrev˚
-    var lineNext    = CGPoint.zero  // via lineNext˚
-    var inForce     = CGFloat(0)    // via inForce˚
-    var inRadius    = CGFloat(0)    // via inRadius˚
-    var inAzimuth   = CGPoint.zero  // var inAzimuth˚
+    var linePrev = CGPoint.zero    // via linePrev˚
+    var lineNext = CGPoint.zero    // via lineNext˚
+    var inForce = CGFloat(0)       // via inForce˚
+    var inRadius = CGFloat(0)      // via inRadius˚
+    var inAzimuth = CGPoint.zero   // var inAzimuth˚
 
-    var margin      = CGSize.zero
-    var fillValue   = Float(0)
+    var margin = CGSize.zero
+    var fillValue = Float(0)
 
     override init() {
         super.init()
         // margin = ShaderView.shared.vertex.margin
     }
 
-    func initTr3(_ root:Tr3) {
+    func initTr3(_ root: Tr3) {
 
-        if  let sky   = root.findPath("sky") ,
+        if  let sky = root.findPath("sky") ,
             let input = sky.findPath("input"),
             let brush = sky.findPath("draw.brush"),
-            let line  = sky.findPath("draw.line") {
+            let line = sky.findPath("draw.line") {
 
-            brushTilt˚  = input.findPath("tilt");   brushTilt˚?.addClosure  { tr3,_ in self.brushTilt  = tr3.BoolVal() }
+            brushTilt˚ = input.findPath("tilt");   brushTilt˚?.addClosure  { tr3,_ in self.brushTilt = tr3.BoolVal() }
             brushPress˚ = brush.findPath("press");  brushPress˚?.addClosure { tr3,_ in self.brushPress = tr3.BoolVal() }
-            brushSize˚  = brush.findPath("size");   brushSize˚?.addClosure  { tr3,_ in self.brushSize  = tr3.CGFloatVal() ?? 1 }
-            linePrev˚   = line.findPath("prev");    linePrev˚?.addClosure   { tr3,_ in self.linePrev   = tr3.CGPointVal() ?? .zero }
-            lineNext˚   = line.findPath("next");    lineNext˚?.addClosure   { tr3,_ in self.lineNext   = tr3.CGPointVal() ?? .zero }
+            brushSize˚ = brush.findPath("size");   brushSize˚?.addClosure  { tr3,_ in self.brushSize = tr3.CGFloatVal() ?? 1 }
+            linePrev˚ = line.findPath("prev");    linePrev˚?.addClosure   { tr3,_ in self.linePrev = tr3.CGPointVal() ?? .zero }
+            lineNext˚ = line.findPath("next");    lineNext˚?.addClosure   { tr3,_ in self.lineNext = tr3.CGPointVal() ?? .zero }
 
-            inForce˚    = input.findPath("force");   inForce˚?.addClosure   { tr3,_ in self.inForce    = tr3.CGFloatVal() ?? 1 }
-            inRadius˚   = input.findPath("radius");  inRadius˚?.addClosure  { tr3,_ in self.inRadius   = tr3.CGFloatVal() ?? 1 }
-            inAzimuth˚  = input.findPath("azimuth"); inAzimuth˚?.addClosure { tr3,_ in self.inAzimuth  = tr3.CGPointVal() ?? .zero }
+            inForce˚ = input.findPath("force");   inForce˚?.addClosure   { tr3,_ in self.inForce = tr3.CGFloatVal() ?? 1 }
+            inRadius˚ = input.findPath("radius");  inRadius˚?.addClosure  { tr3,_ in self.inRadius = tr3.CGFloatVal() ?? 1 }
+            inAzimuth˚ = input.findPath("azimuth"); inAzimuth˚?.addClosure { tr3,_ in self.inAzimuth = tr3.CGPointVal() ?? .zero }
         }
         else {
             print("*** could not find either sky, input, draw.brush, shape.line")

@@ -48,16 +48,16 @@ class SkyMetal {
 
         if tr3.name.first == "_" { return } // ignore "_compute" base class
         if  let type = tr3.findPath("type")?.StringVal(),
-            let node = pipeline.addNodeName(tr3.name, after: nil, type:type) {
+            let node = pipeline.initNodeName(tr3.name, type) {
 
-            func addOn(_ child:Tr3) {
+            func addOn(_ child: Tr3) {
                 node.isOn = child.BoolVal()
                 child.addClosure { tr3,_ in
-                    let nodes = self.pipeline.nodes
-                    guard let parent = tr3.parent       else { return print("*** no parent" ) }
-                    guard let node = nodes[parent.name] else { return print("*** no node for parent:\(parent.scriptLineage(2))" ) }
+                    let nodeNamed = self.pipeline.nodeNamed
+                    guard let parent = tr3.parent else { return print("*** no parent" ) }
+                    guard let node = nodeNamed[parent.name] else { return print("*** no node for parent:\(parent.scriptLineage(2))" ) }
                     let isOn = tr3.BoolVal()
-                    node.isOn = isOn
+                    node.setOn(isOn)
 
                     if isOn {
                         self.pipeline.swap(inNode: node)
@@ -69,11 +69,12 @@ class SkyMetal {
 
             for child in tr3.children {
                 switch child.name {
-                case "buffer" : child.children.forEach { updateBuffer(node,tr3:$0) }
-                case "file"   : node.filename = child.StringVal() ?? ""
-                case "repeat" : node.repeats = child.IntVal() ?? 1
-                case "on"     : addOn(child)
-                case "type"   : break // already found, see above
+                case "buffer": child.children.forEach { updateBuffer(node,tr3:$0) }
+                case "file":   node.filename = child.StringVal() ?? ""
+                case "repeat": node.repeats = child.IntVal() ?? 1
+                case "on":     addOn(child)
+                case "flip":   break // ignore
+                case "type":   break // already found, see above
                 default: print("*** unknown shader:\(tr3.name) parameter: \(child.name)")
                 }
             }

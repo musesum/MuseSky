@@ -17,7 +17,7 @@ public class SkyColor {
     var mix: UnsafeMutablePointer<UInt32>! = nil
     var mixSize = 0
 
-    public init(_ root_:Tr3) {
+    public init(_ root_: Tr3) {
         let root = root_
         if let colorize = root.findPath("sky.colorize") {
             xfade˚ = colorize.findPath("xfade")
@@ -52,7 +52,7 @@ public class SkyColor {
         mix?.deallocate()
     }
 
-    func getMix(_ palSize:Int) -> UnsafeMutablePointer<UInt32> {
+    func getMix(_ palSize: Int) -> UnsafeMutablePointer<UInt32> {
         
         if changed || palSize != mixSize {
             changed = false

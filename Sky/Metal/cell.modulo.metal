@@ -55,7 +55,7 @@ kernel void cellModulo(texture2d<half, access::read_write> inTex  [[texture(0)]]
         case 4: r1 = sum( n  + e  + s  + w + nw + ne + se + sw); break;
     }
 
-    uint r2 =  256 - r1;
+    uint r2 = 256 - r1;
     uint r3 = HiC + (r1 & 0x03);
 
     float fa = float(r3 >> 8)   / 255.;

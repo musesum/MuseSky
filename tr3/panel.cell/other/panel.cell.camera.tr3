@@ -1,0 +1,15 @@
+panel.cell.camera: _camera {
+
+    base {
+        type: "camera"
+        title: "Camera Cell"
+        icon: "icon.camera.png" 
+    }
+    controls {
+        cameraOn.value -> sky.shader.cellCamera.on
+
+        version.value: ( 0...1=0.5) -> sky.shader.cellCamera.buffer.version
+
+        bitplane.value: (0...1=0) -> sky.shader.colorize.buffer.bitplane
+    }
+}

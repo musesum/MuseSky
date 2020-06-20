@@ -1,7 +1,0 @@
-panel.camera {
-    base {
-        type  : "camera"
-        title : "Camera"
-        icon  : "icon.sky.camera.png"
-    }
-}

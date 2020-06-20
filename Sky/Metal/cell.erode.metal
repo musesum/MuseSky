@@ -48,8 +48,8 @@ kernel void cellErode(texture2d<half, access::read_write> inTex  [[texture(0)]],
     
         //float r1 = trunc(fb/8.)*8. + fmod(j,8.); //r1 = (C & 0xf8) + (j & 7);
     uint r1 = cf8 + (j & 0x7);
-    uint r2 =  256 - r1;
-    uint r3 =  HiC + (r1 & 0x3);
+    uint r2 = 256 - r1; 
+    uint r3 = HiC + (r1 & 0x3); 
     
     ua = (r3 >> 8) & 0xFF;
     ur = r3 & 0xFF;

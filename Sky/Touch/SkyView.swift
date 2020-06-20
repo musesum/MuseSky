@@ -6,7 +6,7 @@ class SkyView: UIView, UIGestureRecognizerDelegate {
     static let shared = SkyView()
     
     var filterForce = CGFloat(0) // Apple Pencil begins at 0.333; filter the blotch
-    var touchFingers = [String:TouchFinger]()
+    var touchFingers = [String: TouchFinger]()
     var touchRepeat = false // repeat touch, even when not moving finger
 
     required init?(coder aDecoder: NSCoder) {
@@ -21,7 +21,7 @@ class SkyView: UIView, UIGestureRecognizerDelegate {
         let w = bounds.size.width
         let h = bounds.size.height
 
-        frame = CGRect(x:0, y:0, width:w, height:h)
+        frame = CGRect(x: 0, y: 0, width: w, height: h)
 
         isMultipleTouchEnabled = true
 
@@ -50,7 +50,7 @@ class SkyView: UIView, UIGestureRecognizerDelegate {
     /// then create a new array and add it dictionary of touchFingers.
     func updateTouches(_ touches: Set<UITouch>, with event: UIEvent?) {
 
-        func updateFilter(_ force:CGFloat) {
+        func updateFilter(_ force: CGFloat) {
             let kForceFilter = CGFloat(0.25)
             filterForce = force * kForceFilter + filterForce * (1.0 - kForceFilter)
         }

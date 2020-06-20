@@ -18,28 +18,40 @@ class MuArchive {
     var archiveURL: URL?
     var archive: Archive?
 
-    init(_ archiveName_:String, readOnly:Bool = false) {
+    /// return a preexisting archive, otherwise return nil
+    static func readArchive(_ archiveName_: String) -> MuArchive? {
+        let muArchive = MuArchive(archiveName_, readOnly: true)
+        if muArchive.archive != nil {
+            return muArchive
+        }
+        else {
+            return nil
+        }
+    }
+
+    init(_ archiveName_: String, readOnly: Bool = false) {
 
         archiveName = archiveName_
-        docURL =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        docURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
         archiveURL = docURL
         archiveURL?.appendPathComponent(archiveName)
 
         if let url = archiveURL {
             if readOnly {
-                archive = Archive(url:url, accessMode: .read)
+                archive = Archive(url: url, accessMode: .read)
             }
             else {
-                archive = Archive(url:url, accessMode: .update)
+                archive = Archive(url: url, accessMode: .update)
                 if archive == nil {
-                    archive = Archive(url:url, accessMode: .create)
+                    archive = Archive(url: url, accessMode: .create)
                 }
             }
         }
     }
 
-    func add(_ filename:String, data:Data) {
+    func add(_ filename: String, data: Data) {
 
+        //TODO: add progress to stop runaway compression
         do {
             try archive?.addEntry(with: filename, type: .file,
                                   uncompressedSize: UInt32(data.count),
@@ -55,10 +67,14 @@ class MuArchive {
 
     }
 
-    func get(_ filename:String,_ callback:@escaping  ((Data)->())) {
+    func get(_ filename: String,_ bufSize: Int,_ callback:@escaping  ((Data?)->())) {
+
+        let _ = Progress()
+
         if let entry = archive?[filename] {
+
             do {
-                let _ = try archive?.extract(entry) { data in
+                let _ = try archive?.extract(entry, bufferSize: UInt32(bufSize))  { data in
                     callback(data)
                 }
             }
@@ -105,7 +121,7 @@ class MuArchive {
         let result = data.subdata(in: 2 ..< data.count).withUnsafeBytes ({
             let read = compression_decode_buffer(buffer, size, $0.baseAddress!.bindMemory(to: UInt8.self, capacity: 1),
                                                  data.count - 2, nil, COMPRESSION_ZLIB)
-            return String(decoding: Data(bytes: buffer, count:read), as: UTF8.self)
+            return String(decoding: Data(bytes: buffer, count: read), as: UTF8.self)
         }) as String
         buffer.deallocate()
         return result
@@ -117,12 +133,12 @@ class MuFile {
     
     static let shared = MuFile()
     let fileManager = FileManager.default
-    let docURL : URL!
-    var fileURLs : [URL]!
+    let docURL: URL!
+    var fileURLs: [URL]!
 
     init() {
-        docURL =  FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
-        fileURLs = fileManager.contentsOf(ext:nil)
+        docURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!
+        fileURLs = fileManager.contentsOf(ext: nil)
         printFileURLs()
     }
     func printFileURLs() {
@@ -130,7 +146,7 @@ class MuFile {
             print(url)
         }
     }
-    func saveFile(_ name: String, script:String) {
+    func saveFile(_ name: String, script: String) {
         let filename = docURL.appendingPathComponent(name)
         do {
             try script.write(to: filename, atomically: true, encoding: String.Encoding.utf8)
@@ -138,19 +154,19 @@ class MuFile {
             print(error)
         }
     }
-    func saveFile(_ name: String, image:UIImage) -> Bool {
+    func saveFile(_ name: String, image: UIImage) -> Bool {
 
         let filename = docURL.appendingPathComponent(name)
 
         do {
             if name.hasSuffix("jpg") {
                 if let data = image.jpegData(compressionQuality: 1)  {
-                    try data.write(to:filename)
+                    try data.write(to: filename)
                 }
 
             } else {
                 if let data = image.pngData() {
-                    try data.write(to:filename)
+                    try data.write(to: filename)
                 }
             }
         }
@@ -160,11 +176,11 @@ class MuFile {
         }
         return true
     }
-    func saveFile(_ name: String, data:Data) -> Bool {
+    func saveFile(_ name: String, data: Data) -> Bool {
 
         let filename = docURL.appendingPathComponent(name)
 
-        do { try data.write(to:filename) }
+        do { try data.write(to: filename) }
 
         catch {
             print(error)

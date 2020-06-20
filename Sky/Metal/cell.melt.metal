@@ -2,7 +2,7 @@
 #include <simd/simd.h>
 
 using namespace metal;
-#define Range(x,min,max) (x<min ? min : (x>max ? max :x))
+#define Range(x,min,max) (x<min ? min : (x>max ? max : x))
 
 kernel void cellMelt(texture2d<half, access::read_write> inTex  [[texture(0)]],
                      texture2d<half, access::read_write> outTex [[texture(1)]],

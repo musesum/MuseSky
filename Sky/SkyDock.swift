@@ -12,10 +12,10 @@ import Tr3Thumb
 
 class SkyDock {
 
-    var thumbDock : ThumbDock!
+    var thumbDock: ThumbDock!
     var tr3Root: Tr3!
 
-    init(_ thumbDock_ : ThumbDock, _ tr3Root_ :Tr3) {
+    init(_ thumbDock_: ThumbDock, _ tr3Root_ : Tr3) {
 
         thumbDock = thumbDock_
         tr3Root = tr3Root_
@@ -55,7 +55,7 @@ class SkyDock {
             thumbDock.dotNow = thumbDock.dots[selectIndex]
         }
         else {
-            reorderNames = ["fader", "average", "melt", "timetunnel", "zhabatinski", "slide", "fredkin", "brush", "colorize", "scroll", "tile", "speed"]
+            reorderNames = ["fader", "average", "melt", "timetunnel", "zhabatinski", "slide", "fredkin", "brush", "colorize", "scroll", "tile", "speed", "camera", "camix", "record"]
             thumbDock.reorderDots(reorderNames)
             thumbDock.dotNow = thumbDock.dots.first
         }

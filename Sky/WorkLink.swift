@@ -38,7 +38,7 @@ class WorkLink: NSObject {
         //tr3Osc = Tr3Osc(sky)
     }
 
-    func updateFps(_ newFps:Int?) {
+    func updateFps(_ newFps: Int?) {
         if  let newFps = newFps,
             fps != newFps {
             fps = newFps

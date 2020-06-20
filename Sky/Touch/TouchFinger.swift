@@ -33,13 +33,13 @@ class TouchFinger: NSObject {
         let touchPrev = touchNext ^ 1 // flush what used to be nextBuffer
         let skyDraw = SkyDraw.shared
 
-        func flushItem(_ item:TouchItem?) {
+        func flushItem(_ item: TouchItem?) {
             
             if let item = item {
 
                 let radius = skyDraw.update(item)
 
-                let p = CGPoint(x:item.next.x, y: item.next.y)
+                let p = CGPoint(x: item.next.x, y: item.next.y)
 
                 isDone = item.phase == .ended || item.phase == .cancelled
 

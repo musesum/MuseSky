@@ -16,13 +16,13 @@ class SkyMain: NSObject, WorkLinkDelegate {
         WorkLink.shared.delegates.append(self)
     }
 
-    func initDrawBufIndex(_ index: Int, size: CGSize, options: [AnyHashable : Any]) {
+    func initDrawBufIndex(_ index: Int, size: CGSize, options: [AnyHashable: Any]) {
 
         CVPixelBufferCreate(kCFAllocatorDefault, Int(size.width), Int(size.height),
                             kCVPixelFormatType_32BGRA, options as CFDictionary, &drawBuf[index])
     }
 
-    func initPaletteOptions(_ options: [AnyHashable : Any]) {
+    func initPaletteOptions(_ options: [AnyHashable: Any]) {
 
         CVPixelBufferCreate(kCFAllocatorDefault, 256,1,
         kCVPixelFormatType_32BGRA, options as CFDictionary, &palBuf)
@@ -31,9 +31,9 @@ class SkyMain: NSObject, WorkLinkDelegate {
     func initPixelBuffer(_ size: CGSize) {
 
         let options = [
-            kCVPixelBufferCGImageCompatibilityKey : NSNumber(value: true),
-            kCVPixelBufferCGBitmapContextCompatibilityKey : NSNumber(value: true),
-            kCVPixelBufferMetalCompatibilityKey : NSNumber(value: true)
+            kCVPixelBufferCGImageCompatibilityKey: NSNumber(value: true),
+            kCVPixelBufferCGBitmapContextCompatibilityKey: NSNumber(value: true),
+            kCVPixelBufferMetalCompatibilityKey: NSNumber(value: true)
         ]
 
         initDrawBufIndex(0, size: size, options: options)

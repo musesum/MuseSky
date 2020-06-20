@@ -15,7 +15,7 @@ extension FileManager {
         let fileURLs = try? contentsOfDirectory(at: documentsURL, includingPropertiesForKeys: nil, options: skipsHiddenFiles ? .skipsHiddenFiles : [] )
         return fileURLs
     }
-    func contentsOf(ext:String!) -> [URL] {
+    func contentsOf(ext: String!) -> [URL] {
         do {
             let docURL = urls(for: .documentDirectory, in: .userDomainMask).first!
             let allFiles = try contentsOfDirectory(at: docURL, includingPropertiesForKeys: nil)
