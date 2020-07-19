@@ -27,7 +27,7 @@ public class SkyPipeline: NSObject, MTKViewDelegate {
     var drawSize = CGSize.zero  // size of render surface
     var settingup = true        // ignore swapping in new shaders
     var skyColor: SkyColor!     // instance of subtree of sky.colorize
-    var skyMainRun˚ : Tr3?      // run the cellulary automata rules
+    var skyMainRun˚: Tr3?      // run the cellular automata rules
     var skyMainRun = true
 
     override init() {
@@ -245,20 +245,17 @@ public class SkyPipeline: NSObject, MTKViewDelegate {
         // begin -------------------------
 
         if let node = nodeNamed[name] ?? initNodeName(name, type) {
-            
-            //if after != nil {
 
-                switch type {
-                    case "camera":   addCameraToPipeline(node)
-                    case "draw":     addDrawToPipeline(node)
-                    case "compute":  addComputeToPipeline(node)
-                    case "colorize": colorNode = node.insert(after: after)
-                    case "camix":    camixNode = node.insert(after: after)
-                    case "render":   renderNode = node.insert(after: after)
-                    case "record":   recordNode = node.insert(after: after)
-                    default:         node.insert(after: after)
-                }
-            //}
+            switch type {
+                case "camera":   addCameraToPipeline(node)
+                case "draw":     addDrawToPipeline(node)
+                case "compute":  addComputeToPipeline(node)
+                case "colorize": colorNode = node.insert(after: after)
+                case "camix":    camixNode = node.insert(after: after)
+                case "render":   renderNode = node.insert(after: after)
+                case "record":   recordNode = node.insert(after: after)
+                default:         node.insert(after: after)
+            }
             return node
         }
         return nil
@@ -267,10 +264,10 @@ public class SkyPipeline: NSObject, MTKViewDelegate {
     /// called from SkyMetal:: makeShader.updateBuffer.addOn
     func swap(inNode node: MetaNode) {
         
-        if settingup { return } // don't swap while setting up pipeline
+        if settingup { return } // don't swap while Setting up pipeline
 
         switch node.type {
-            case "camera": cameraNode = drawNode?.insertNode(node, .above)
+            case "camera": cameraNode = drawNode?.insertNode(node, .below)
             case "camix":  camixNode = renderNode?.insertNode(node, .above)
             default:       cellNode = cellNode?.replace(with: node)
         }

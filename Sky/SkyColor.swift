@@ -6,10 +6,10 @@ public class SkyColor {
 
     var xfade˚: Tr3?        // cross fade tr3 between two current palettes
     var xfade = Float(0.5)  // cross fade current value
-    var pal0˚ : Tr3?
-    var pal0  = "rgbK"      // Red Green Blue with blacK interstitials
-    var pal1˚ : Tr3?
-    var pal1  = "wKZ"       // White with blacK inter pluz zeno fractal
+    var pal0˚: Tr3?
+    var pal0 = "rgbK"      // Red Green Blue with blacK interstitials
+    var pal1˚: Tr3?
+    var pal1 = "wKZ"       // White with blacK inter pluz zeno fractal
 
     var colors = [Color("rgbK"),Color("wKZ")] // dual color palette
     var rgbs = [Rgb]()      // rendered color palette
