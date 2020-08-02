@@ -13,7 +13,7 @@ sky {
     dock {
         fader average: 1 melt timetunnel
         zhabatinski slide fredkin brush
-        colorize scroll tile speed camera camix record
+        colorize scroll tile speed camera record
     }
     colorize {
         xfade: (0...1=0.5)

@@ -55,7 +55,7 @@ class SkyDock {
             thumbDock.dotNow = thumbDock.dots[selectIndex]
         }
         else {
-            reorderNames = ["fader", "average", "melt", "timetunnel", "zhabatinski", "slide", "fredkin", "brush", "colorize", "scroll", "tile", "speed", "camera", "camix", "record"]
+            reorderNames = ["fader", "average", "melt", "timetunnel", "zhabatinski", "slide", "fredkin", "brush", "colorize", "scroll", "tile", "speed", "camera", "record"]
             thumbDock.reorderDots(reorderNames)
             thumbDock.dotNow = thumbDock.dots.first
         }

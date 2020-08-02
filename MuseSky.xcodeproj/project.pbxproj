@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		801D953923A2A34300ABCF7F /* panel.camera.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 801D953823A2A34300ABCF7F /* panel.camera.tr3 */; };
-		80703D3B23A03CCB0093C016 /* panel.cell.camix.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80703D3A23A03CCB0093C016 /* panel.cell.camix.tr3 */; };
 		80703D3D23A04F570093C016 /* cell.camix.metal in Sources */ = {isa = PBXBuildFile; fileRef = 80703D3C23A04F570093C016 /* cell.camix.metal */; };
 		807048EB23378A090001617D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807048EA23378A090001617D /* AppDelegate.swift */; };
 		807048ED23378A090001617D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807048EC23378A090001617D /* SceneDelegate.swift */; };
@@ -101,7 +100,6 @@
 
 /* Begin PBXFileReference section */
 		801D953823A2A34300ABCF7F /* panel.camera.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.camera.tr3; sourceTree = "<group>"; };
-		80703D3A23A03CCB0093C016 /* panel.cell.camix.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.camix.tr3; sourceTree = "<group>"; };
 		80703D3C23A04F570093C016 /* cell.camix.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = cell.camix.metal; sourceTree = "<group>"; };
 		807048E723378A090001617D /* Muse Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Muse Sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		807048EA23378A090001617D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -160,6 +158,7 @@
 		80704A5223378B000001617D /* panel.cell.timeTunnel.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.timeTunnel.tr3; sourceTree = "<group>"; };
 		80704A7723378C1A0001617D /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		80704A7823378C1B0001617D /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
+		8082FD8624B2589A002F880A /* scratch1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scratch1.h; sourceTree = "<group>"; };
 		808E90BA23384927004EB9C9 /* MuColor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuColor; path = "../Mu Packages/MuColor"; sourceTree = "<group>"; };
 		808E90BB2338492D004EB9C9 /* MuCubic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuCubic; path = "../Mu Packages/MuCubic"; sourceTree = "<group>"; };
 		808E90BD23384938004EB9C9 /* MuDrawBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawBox.swift; sourceTree = "<group>"; };
@@ -219,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				8070497B23378ADB0001617D /* Scratch2.h */,
+				8082FD8624B2589A002F880A /* scratch1.h */,
 				808E90BA23384927004EB9C9 /* MuColor */,
 				808E90BB2338492D004EB9C9 /* MuCubic */,
 				808E90BC23384938004EB9C9 /* MuDraw */,
@@ -412,7 +412,6 @@
 			isa = PBXGroup;
 			children = (
 				80F846E2234D01D2009022F7 /* panel.cell.camera.tr3 */,
-				80703D3A23A03CCB0093C016 /* panel.cell.camix.tr3 */,
 				80B8ACCA23761B9D00F80DB0 /* panel.cell.record.tr3 */,
 				80704A3B23378B000001617D /* panel.speed.tr3 */,
 				80704A3E23378B000001617D /* panel.cell.brush.tr3 */,
@@ -539,7 +538,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				80704A7323378B000001617D /* panel.cell.timeTunnel.tr3 in Resources */,
-				80703D3B23A03CCB0093C016 /* panel.cell.camix.tr3 in Resources */,
 				801D953923A2A34300ABCF7F /* panel.camera.tr3 in Resources */,
 				80704A6E23378B000001617D /* sky.shader.tr3 in Resources */,
 				80704A5923378B000001617D /* panel.cell.fader.tr3 in Resources */,
@@ -709,7 +707,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -763,7 +761,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -780,7 +778,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9AVP5GX45R;
 				INFOPLIST_FILE = MuseSky/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -799,7 +797,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9AVP5GX45R;
 				INFOPLIST_FILE = MuseSky/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -142,7 +142,6 @@ class SkyTr3: NSObject {
         parseFile("panel.cell.scroll")
         parseFile("panel.shader.tile")
         parseFile("panel.cell.camera")
-        parseFile("panel.cell.camix")
         parseFile("panel.cell.record") //?? 
         parseFile("panel.speed")
 
