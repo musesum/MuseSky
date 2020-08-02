@@ -2,7 +2,7 @@ panel._cell {
     base {
         type: "cell"
         title: "_cell" // name
-        frame: (x: 0 y: 0 w: 260 h: 170)
+        frame: (x: 0 y: 0 w: 250 h: 130)
         icon: "icon.ring.white.png"
     }
     controls {
@@ -16,7 +16,7 @@ panel._cell {
         ruleOn {
             type: "panelon"
             title: "Active"
-            frame: (x: 202 y: 6 w: 48 h: 32)
+            frame: (x: 202 y: 4 w: 40 h: 32)
             icon: "icon.ring.white.png"
             value: (0...1=0) -> panel.cell˚ruleOn.value: 0 -> panel.cell.speed.restart
             lag: 0
@@ -24,14 +24,14 @@ panel._cell {
         version {
             type: "segment"
             title: "Version"
-            frame: (x: 10 y: 50 w: 192 h: 44)
+            frame: (x: 10 y: 44 w: 192 h: 32)
             value: (0...1=1)
             user -> ruleOn.value: 1
         }
         lock {
             type: "switch"
             title: "Lock"
-            frame: (x: 210 y: 50 w: 44 h: 44)
+            frame: (x: 210 y: 44 w: 32 h: 32)
             icon { off: "icon.lock.closed.png" on: "icon.lock.open.png" }
             value: (0...1=0)
             lag: 0
@@ -39,21 +39,14 @@ panel._cell {
         bitplane {
             type: "slider"
             title: "Bit Plane"
-            frame: (x: 10 y: 106 w: 192 h: 44)
+            frame: (x: 10 y: 84 w: 192 h: 32)
             icon: "icon.pearl.white.png"
             value: (0...1=0) -> sky.shader.colorize.buffer.bitplane
-        }
-        fillZero {
-            type: "trigger"
-            title: "Fill Zero"
-            frame: (x: 210 y: 106 w: 44 h: 44)
-            icon: "icon.drop.gray.png"
-            value: (0...1=0) -> sky.draw.screen.fillOne
         }
         fillOne {
             type: "trigger"
             title: "Fill Ones"
-            frame: (x: 210 y: 106 w: 44 h: 44)
+            frame: (x: 210 y: 84 w: 32 h: 32)
             icon: "icon.drop.gray.png" 
             value: (0...1=0) -> sky.draw.screen.fillOne
         }
