@@ -19,9 +19,19 @@ class TouchFinger: NSObject {
     var touchNext = 0
     var isDone = false
 
-    func cacheTouchItem(_ touchItem: TouchItem?) {
-        if let touchItem = touchItem {
-            touchItems[touchNext].append(touchItem)
+    func cacheTouchItem(_ nextItem: TouchItem?) {
+        if let nextItem = nextItem {
+            if let lastItem = lastItem
+            //lastItem.radius > 0, lastItem.force > 0,
+            //nextItem.radius > 0, nextItem.force == 0
+            {
+                let filter = CGFloat(0.5)
+                let force = (lastItem.force * filter) + (nextItem.force * (1-filter))
+                //print(String(format: "* %.3f -> %.3f",lastItem.force, force))
+                nextItem.force = force
+
+            }
+            touchItems[touchNext].append(nextItem)
         }
     }
 
@@ -47,16 +57,22 @@ class TouchFinger: NSObject {
                 quadXYR.iterate12(closure)
             }
         }
+        // begin -----------------------------
+
         // there is new movement of finger
         let count = touchItems[touchPrev].count
         if count > 0 {
             for item in touchItems[touchPrev] {
+
                 flushItem(item)
+                // last last movement for repeat
+                lastItem = touchItems[touchPrev].last
             }
-            lastItem = touchItems[touchPrev].last // last last movement for repeat
         }
-        else if SkyView.shared.touchRepeat {  // finger is stationary
-            flushItem(lastItem)                 // so maybe repeat last movement
+        // finger is stationary
+        else if SkyView.shared.touchRepeat {
+            // so maybe repeat last movement
+            flushItem(lastItem)
         }
         touchItems[touchPrev].removeAll()
     }

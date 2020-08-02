@@ -44,15 +44,15 @@ class SkyDraw: NSObject {
             let brush = sky.findPath("draw.brush"),
             let line = sky.findPath("draw.line") {
 
-            brushTilt˚ = input.findPath("tilt");   brushTilt˚?.addClosure  { tr3,_ in self.brushTilt = tr3.BoolVal() }
-            brushPress˚ = brush.findPath("press");  brushPress˚?.addClosure { tr3,_ in self.brushPress = tr3.BoolVal() }
-            brushSize˚ = brush.findPath("size");   brushSize˚?.addClosure  { tr3,_ in self.brushSize = tr3.CGFloatVal() ?? 1 }
-            linePrev˚ = line.findPath("prev");    linePrev˚?.addClosure   { tr3,_ in self.linePrev = tr3.CGPointVal() ?? .zero }
-            lineNext˚ = line.findPath("next");    lineNext˚?.addClosure   { tr3,_ in self.lineNext = tr3.CGPointVal() ?? .zero }
+            brushTilt˚ = input.findPath("tilt"); brushTilt˚?.addClosure { t,_ in self.brushTilt = t.BoolVal() }
+            brushPress˚ = brush.findPath("press"); brushPress˚?.addClosure { t,_ in self.brushPress = t.BoolVal() }
+            brushSize˚ = brush.findPath("size"); brushSize˚?.addClosure { t,_ in self.brushSize = t.CGFloatVal() ?? 1 }
+            linePrev˚ = line.findPath("prev"); linePrev˚?.addClosure { t,_ in self.linePrev = t.CGPointVal() ?? .zero }
+            lineNext˚ = line.findPath("next"); lineNext˚?.addClosure { t,_ in self.lineNext = t.CGPointVal() ?? .zero }
 
-            inForce˚ = input.findPath("force");   inForce˚?.addClosure   { tr3,_ in self.inForce = tr3.CGFloatVal() ?? 1 }
-            inRadius˚ = input.findPath("radius");  inRadius˚?.addClosure  { tr3,_ in self.inRadius = tr3.CGFloatVal() ?? 1 }
-            inAzimuth˚ = input.findPath("azimuth"); inAzimuth˚?.addClosure { tr3,_ in self.inAzimuth = tr3.CGPointVal() ?? .zero }
+            inForce˚ = input.findPath("force"); inForce˚?.addClosure { t,_ in self.inForce = t.CGFloatVal() ?? 1 }
+            inRadius˚ = input.findPath("radius"); inRadius˚?.addClosure { t,_ in self.inRadius = t.CGFloatVal() ?? 1 }
+            inAzimuth˚ = input.findPath("azimuth"); inAzimuth˚?.addClosure { t,_ in self.inAzimuth = t.CGPointVal() ?? .zero }
         }
         else {
             print("*** could not find either sky, input, draw.brush, shape.line")
@@ -63,7 +63,7 @@ class SkyDraw: NSObject {
 
         // if using Apple Pencil and brush tilt is turned on
         if item.force > 0, brushTilt {
-            let azi = CGPoint(x:-item.azimuth.dy,y:-item.azimuth.dx)
+            let azi = CGPoint(x: -item.azimuth.dy, y: -item.azimuth.dx)
             inAzimuth˚?.setVal(azi, [.activate]) // will update local azimuth via Tr3Graph
         }
         
@@ -71,7 +71,7 @@ class SkyDraw: NSObject {
         var radiusNow = CGFloat(1)
         if brushPress  {
             if inForce > 0 || item.azimuth.dx != 0.0 {
-                inForce˚?.setVal(item.force,[.activate]) // will update local azimuth via Tr3Graph
+                inForce˚?.setVal(item.force, [.activate]) // will update local azimuth via Tr3Graph
                 radiusNow = brushSize
             } else {
                 inRadius˚?.setVal(item.radius,[.activate])

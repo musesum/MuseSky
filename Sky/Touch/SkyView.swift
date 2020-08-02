@@ -6,7 +6,8 @@ class SkyView: UIView, UIGestureRecognizerDelegate {
     static let shared = SkyView()
     
     var filterForce = CGFloat(0) // Apple Pencil begins at 0.333; filter the blotch
-    var touchFingers = [String: TouchFinger]()
+    var fingerNext = [String: TouchFinger]()
+    var fingerPrev = [String: TouchFinger]()
     var touchRepeat = false // repeat touch, even when not moving finger
 
     required init?(coder aDecoder: NSCoder) {
@@ -32,10 +33,10 @@ class SkyView: UIView, UIGestureRecognizerDelegate {
     /// Previous version used to draw directly into buf, but now passes a closure
     func flushFingersBuf(_ closure: @escaping (CGPoint,CGFloat)->()) {
 
-        for (key,finger) in touchFingers {
+        for (key,finger) in fingerNext {
             finger.flushCacheBuf(closure)
             if finger.isDone {
-                touchFingers.removeValue(forKey: key)
+                fingerNext.removeValue(forKey: key)
             }
         }
     }
@@ -45,9 +46,9 @@ class SkyView: UIView, UIGestureRecognizerDelegate {
     /// Add new touches to be drawn in the NextFrame, above.
     /// During the lifecycle of a touch, the memory address of
     /// a specific touch remains the same, so use that as a key
-    /// into a dictionary of touchFingers to retrieve an
+    /// into a dictionary of fingerNext to retrieve an
     /// array of events. If this is the first time for a new finger
-    /// then create a new array and add it dictionary of touchFingers.
+    /// then create a new array and add it dictionary of fingerNext.
     func updateTouches(_ touches: Set<UITouch>, with event: UIEvent?) {
 
         func updateFilter(_ force: CGFloat) {
@@ -79,19 +80,21 @@ class SkyView: UIView, UIGestureRecognizerDelegate {
             let angle = touch.azimuthAngle(in: nil)
             let alti = (.pi/2 - touch.altitudeAngle) / .pi/2
             let azim = CGVector(dx: -sin(angle) * alti, dy: cos(angle) * alti)
-            
-            let item = TouchItem(prev,next,time,radius,force,azim,phase)
+            let key = String(format: "%p", touch)
+
+            let item = TouchItem(key, time, prev, next, radius, force, azim, phase)
 
             // add touch item to an old finger, based on memory address
-            let touchKey = String(format: "%p", touch)
-            if let finger = touchFingers[touchKey] {
+            if let finger = fingerNext[key] {
                  finger.cacheTouchItem(item)
             }
-            else {  // add touch item to a new finger
+            // add touch item to a new finger
+            else {
                 let finger = TouchFinger()
-                touchFingers[touchKey] = finger
+                fingerNext[key] = finger
                 finger.cacheTouchItem(item)
             }
+            //item.logTouch()
         }
     }
 

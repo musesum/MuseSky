@@ -54,7 +54,6 @@ class WorkLink: NSObject {
         goApp()
     }
 
-
     func goApp() {
 
         if  WorkLink.goAppBlock == false {
