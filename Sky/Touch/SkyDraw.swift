@@ -37,7 +37,7 @@ class SkyDraw: NSObject {
         // margin = ShaderView.shared.vertex.margin
     }
 
-    func initTr3(_ root: Tr3) {
+    func bindTr3(_ root: Tr3) {
 
         if  let sky = root.findPath("sky") ,
             let input = sky.findPath("input"),

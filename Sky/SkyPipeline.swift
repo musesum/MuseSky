@@ -124,7 +124,7 @@ public class SkyPipeline: NSObject, MTKViewDelegate {
     }
 
     // snapshot on framebuffer, drawTexture and skyGraph
-    func saveSnapshot(_ name: String, _ completion:@escaping (()->())) {
+    func saveSnapshot(_ name: String, _ completion: @escaping (()->())) {
 
         let time = trunc(Date().timeIntervalSince1970)
         let archive = MuArchive(name + ".\(time).zip")

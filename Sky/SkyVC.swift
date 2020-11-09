@@ -49,8 +49,11 @@ class SkyVC: UIViewController {
         let tr3Root = SkyTr3.shared.root
         let _ = SkyDock(thumbDock, tr3Root)
         view.addSubview(skyView)
-        SkyDraw.shared.initTr3(tr3Root)
+        SkyDraw.shared.bindTr3(tr3Root)
         let _ = SkyMain.shared
+
+        //MuAudio.shared.test()
+        MuMidi.shared.test(root: tr3Root)
     }
 
 

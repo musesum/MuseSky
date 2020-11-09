@@ -11,7 +11,7 @@ sky {
            render: "render"
     }
     dock {
-        fader average: 1 melt timetunnel
+        fader average:1 melt timetunnel
         zhabatinski slide fredkin brush
         colorize scroll tile speed camera record
     }

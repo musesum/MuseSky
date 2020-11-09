@@ -67,7 +67,7 @@ class MuArchive {
 
     }
 
-    func get(_ filename: String,_ bufSize: Int,_ callback:@escaping  ((Data?)->())) {
+    func get(_ filename: String,_ bufSize: Int,_ callback: @escaping  ((Data?)->())) {
 
         let _ = Progress()
 

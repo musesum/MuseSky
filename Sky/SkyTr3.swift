@@ -19,7 +19,6 @@ class SkyTr3: NSObject {
     
     override init() {
 
-
         super.init()
         // parse Sky Snapshot Or scripts
          if let snapshot = MuArchive.readArchive("Snapshot.zip") {
@@ -126,6 +125,7 @@ class SkyTr3: NSObject {
 
         parseFile("sky.main")
         parseFile("sky.shader")
+        parseFile("sky.midi")
         parseFile("panel.cell")
         parseFile("panel.camera")
 
