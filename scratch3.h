@@ -13,7 +13,7 @@ panel.cell.midi {
             icon "icon.midi.png"
             value (0:1) >> sky.main.run
             user  >> scrollBox.value(x 0.5, y 0.5)
-            lag 0
+            lag (0)
         }
         hide {
             type "panelx"

@@ -128,11 +128,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		801A59E825326BA700B143DA /* Tr3 */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tr3; path = ../Tr3; sourceTree = "<group>"; };
 		801D953823A2A34300ABCF7F /* panel.camera.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.camera.tr3; sourceTree = "<group>"; };
 		802650D025574388005B4119 /* panel.shader.colorize.tr3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = panel.shader.colorize.tr3.json; sourceTree = "<group>"; };
 		802650DD25574BC9005B4119 /* panel.shader.colorize.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.shader.colorize.v2.tr3; sourceTree = "<group>"; };
 		802650EB25575DBF005B4119 /* panel.cell.scroll.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.scroll.v2.tr3; sourceTree = "<group>"; };
+		804F949225747B7D0090F7A6 /* MuCubic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuCubic; path = "Mu Packages/MuCubic"; sourceTree = "<group>"; };
 		80703D3C23A04F570093C016 /* cell.camix.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = cell.camix.metal; sourceTree = "<group>"; };
 		807048E723378A090001617D /* Muse Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Muse Sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		807048EA23378A090001617D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -222,7 +222,6 @@
 		80B8ACCA23761B9D00F80DB0 /* panel.cell.record.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.record.tr3; sourceTree = "<group>"; };
 		80B9E12425169D0E0074AEEA /* MuMidi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuMidi.swift; sourceTree = SOURCE_ROOT; };
 		80C07528253226590008820D /* MuColor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuColor; path = "Mu Packages/MuColor"; sourceTree = "<group>"; };
-		80C0752C253226820008820D /* MuCubic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuCubic; path = "Mu Packages/MuColor/MuCubic"; sourceTree = "<group>"; };
 		80C075312532268F0008820D /* MuDrawBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawBox.swift; sourceTree = "<group>"; };
 		80C075322532268F0008820D /* MuDrawBubble.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawBubble.swift; sourceTree = "<group>"; };
 		80C075332532268F0008820D /* ColorRGBA.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorRGBA.swift; sourceTree = "<group>"; };
@@ -282,13 +281,12 @@
 				8079629E2558A415005BBFA6 /* scratch3.h */,
 				8070497B23378ADB0001617D /* Scratch2.h */,
 				8082FD8624B2589A002F880A /* scratch1.h */,
-				801A59E825326BA700B143DA /* Tr3 */,
 				807048E923378A090001617D /* MuseSky */,
 				8070495B23378ADB0001617D /* Sky */,
 				80704A3023378B000001617D /* tr3 */,
 				80B9E12325169B6F0074AEEA /* MuAudio */,
 				80C07528253226590008820D /* MuColor */,
-				80C0752C253226820008820D /* MuCubic */,
+				804F949225747B7D0090F7A6 /* MuCubic */,
 				80C075302532268F0008820D /* MuDraw */,
 				80C0753E253226950008820D /* MuExtensions */,
 				808E90D723384C94004EB9C9 /* MuFiles */,

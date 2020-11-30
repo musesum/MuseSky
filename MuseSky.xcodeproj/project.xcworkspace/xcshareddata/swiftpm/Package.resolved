@@ -6,7 +6,7 @@
         "repositoryURL": "https://github.com/AudioKit/AudioKit",
         "state": {
           "branch": "staging",
-          "revision": "e77cb5530b18bf8b4a6f2a76f9bcefe2e3578070",
+          "revision": "de8ed947e216c6ba1461603a96188b53fcdeb1a2",
           "version": null
         }
       },
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/musesum/Par.git",
         "state": {
           "branch": null,
-          "revision": "264dab767deb789650f8b3db08cf6aee190e038c",
-          "version": "0.1.10"
+          "revision": "fea21e234a334b146333d4307ac0ad11f83e851b",
+          "version": "0.2.1"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/musesum/Tr3.git",
         "state": {
           "branch": null,
-          "revision": "d3a641b4d266080d5ae08770250f6e17eda43e7f",
-          "version": "0.1.89"
+          "revision": "23d35bf29146759115985fae21e39f71c7e57520",
+          "version": "0.2.1"
         }
       },
       {

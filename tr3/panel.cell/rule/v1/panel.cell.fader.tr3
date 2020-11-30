@@ -1,5 +1,4 @@
 panel.cell.fader: _cell {
-
     base {
         title: "Fader"
         icon: "icon.cell.fader.png"

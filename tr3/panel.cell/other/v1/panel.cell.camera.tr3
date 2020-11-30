@@ -1,4 +1,4 @@
-panel.cell.camera: _camera {
+panel.cell.camera *_camera {
 
     base {
         type: "camera"
