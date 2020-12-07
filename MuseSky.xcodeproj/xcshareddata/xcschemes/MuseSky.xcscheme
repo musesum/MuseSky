@@ -17,7 +17,7 @@
                BlueprintIdentifier = "807048E623378A090001617D"
                BuildableName = "Muse Sky.app"
                BlueprintName = "MuseSky"
-               ReferencedContainer = "container:MuseSky.xcodeproj">
+               ReferencedContainer = "container:MuseSchromeky.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -35,7 +35,7 @@
                BlueprintIdentifier = "807048FC23378A0B0001617D"
                BuildableName = "MuseSkyTests.xctest"
                BlueprintName = "MuseSkyTests"
-               ReferencedContainer = "container:MuseSky.xcodeproj">
+               ReferencedContainer = "container:MuseSchromeky.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -45,15 +45,15 @@
                BlueprintIdentifier = "8070490723378A0B0001617D"
                BuildableName = "MuseSkyUITests.xctest"
                BlueprintName = "MuseSkyUITests"
-               ReferencedContainer = "container:MuseSky.xcodeproj">
+               ReferencedContainer = "container:MuseSchromeky.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Release"
-      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
-      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      selectedDebuggerIdentifier = ""
+      selectedLauncherIdentifier = "Xcode.IDEFoundation.Launcher.PosixSpawn"
       launchStyle = "0"
       useCustomWorkingDirectory = "NO"
       ignoresPersistentStateOnLaunch = "NO"
@@ -71,6 +71,15 @@
             ReferencedContainer = "container:MuseSky.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "807048E623378A090001617D"
+            BuildableName = "Muse Sky.app"
+            BlueprintName = "MuseSky"
+            ReferencedContainer = "container:MuseSchromeky.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -85,7 +94,7 @@
             BlueprintIdentifier = "807048E623378A090001617D"
             BuildableName = "Muse Sky.app"
             BlueprintName = "MuseSky"
-            ReferencedContainer = "container:MuseSky.xcodeproj">
+            ReferencedContainer = "container:MuseSchromeky.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

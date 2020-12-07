@@ -7,10 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		801D953923A2A34300ABCF7F /* panel.camera.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 801D953823A2A34300ABCF7F /* panel.camera.tr3 */; };
-		802650DE25574BC9005B4119 /* panel.shader.colorize.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 802650DD25574BC9005B4119 /* panel.shader.colorize.v2.tr3 */; };
-		802650EC25575DBF005B4119 /* panel.cell.scroll.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 802650EB25575DBF005B4119 /* panel.cell.scroll.v2.tr3 */; };
-		8062A7C225168FB300E61D38 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8062A7C125168FB300E61D38 /* AudioKit */; };
+		802650DE25574BC9005B4119 /* panel.shader.colorize.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 802650DD25574BC9005B4119 /* panel.shader.colorize.tr3 */; };
+		802650EC25575DBF005B4119 /* panel.cell.scroll.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 802650EB25575DBF005B4119 /* panel.cell.scroll.tr3 */; };
+		804DC236257762BF00359295 /* sky.midi copy.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 804DC235257762BF00359295 /* sky.midi copy.tr3 */; };
 		80703D3D23A04F570093C016 /* cell.camix.metal in Sources */ = {isa = PBXBuildFile; fileRef = 80703D3C23A04F570093C016 /* cell.camix.metal */; };
 		807048EB23378A090001617D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807048EA23378A090001617D /* AppDelegate.swift */; };
 		807048ED23378A090001617D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807048EC23378A090001617D /* SceneDelegate.swift */; };
@@ -40,56 +39,36 @@
 		80704A0523378ADC0001617D /* SkyMain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070497723378ADB0001617D /* SkyMain.swift */; };
 		80704A0623378ADC0001617D /* SkyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070497823378ADB0001617D /* SkyColor.swift */; };
 		80704A0723378ADC0001617D /* SkyDock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8070497923378ADB0001617D /* SkyDock.swift */; };
-		80704A5323378B000001617D /* panel.cell.scroll.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3123378B000001617D /* panel.cell.scroll.tr3 */; };
-		80704A5423378B000001617D /* panel.shader.colorize.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3223378B000001617D /* panel.shader.colorize.tr3 */; };
-		80704A5523378B000001617D /* panel.cell.melt.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3323378B000001617D /* panel.cell.melt.tr3 */; };
-		80704A5623378B000001617D /* panel.cell.fredkin.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3423378B000001617D /* panel.cell.fredkin.tr3 */; };
-		80704A5723378B000001617D /* panel.shader.tile.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3523378B000001617D /* panel.shader.tile.tr3 */; };
-		80704A5823378B000001617D /* panel.cell.average.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3623378B000001617D /* panel.cell.average.tr3 */; };
-		80704A5923378B000001617D /* panel.cell.fader.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3723378B000001617D /* panel.cell.fader.tr3 */; };
-		80704A5A23378B000001617D /* panel.cell.slide.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3823378B000001617D /* panel.cell.slide.tr3 */; };
-		80704A5B23378B000001617D /* panel.shader.weave.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3923378B000001617D /* panel.shader.weave.tr3 */; };
-		80704A5C23378B000001617D /* panel.cell.gas.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3A23378B000001617D /* panel.cell.gas.tr3 */; };
-		80704A5D23378B000001617D /* panel.cell.speed.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3B23378B000001617D /* panel.cell.speed.tr3 */; };
-		80704A5E23378B000001617D /* panel.cell.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3C23378B000001617D /* panel.cell.tr3 */; };
-		80704A5F23378B000001617D /* panel.cell.drift.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3D23378B000001617D /* panel.cell.drift.tr3 */; };
-		80704A6023378B000001617D /* panel.cell.brush.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A3E23378B000001617D /* panel.cell.brush.tr3 */; };
-		80704A6E23378B000001617D /* sky.shader.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A4D23378B000001617D /* sky.shader.tr3 */; };
-		80704A7023378B000001617D /* panel.cell.modulo.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A4F23378B000001617D /* panel.cell.modulo.tr3 */; };
-		80704A7123378B000001617D /* panel.cell.zhabatinski.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A5023378B000001617D /* panel.cell.zhabatinski.tr3 */; };
-		80704A7223378B000001617D /* sky.main.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A5123378B000001617D /* sky.main.tr3 */; };
-		80704A7323378B000001617D /* panel.cell.timeTunnel.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80704A5223378B000001617D /* panel.cell.timeTunnel.tr3 */; };
 		80704A7923378C1B0001617D /* Metal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80704A7723378C1A0001617D /* Metal.framework */; };
 		80704A7A23378C1B0001617D /* MetalKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 80704A7823378C1B0001617D /* MetalKit.framework */; };
 		80704B3C23378DB40001617D /* Tr3 in Frameworks */ = {isa = PBXBuildFile; productRef = 80704B3B23378DB40001617D /* Tr3 */; };
-		8079629125587F3C005BBFA6 /* panel.cell.midi.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 8079629025587F3C005BBFA6 /* panel.cell.midi.tr3 */; };
-		807962A22558B110005BBFA6 /* sky.shader.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 8079629F2558B110005BBFA6 /* sky.shader.v2.tr3 */; };
-		807962A32558B110005BBFA6 /* panel.shader.weave.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962A02558B110005BBFA6 /* panel.shader.weave.v2.tr3 */; };
-		807962A42558B110005BBFA6 /* panel.shader.tile.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962A12558B110005BBFA6 /* panel.shader.tile.v2.tr3 */; };
-		807962B12558B68E005BBFA6 /* panel.cell.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962AF2558B68E005BBFA6 /* panel.cell.v2.tr3 */; };
-		807962B22558B68E005BBFA6 /* panel.camera.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962B02558B68E005BBFA6 /* panel.camera.v2.tr3 */; };
-		807962C32558BB69005BBFA6 /* panel.cell.camera.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962BE2558BB69005BBFA6 /* panel.cell.camera.v2.tr3 */; };
-		807962C42558BB69005BBFA6 /* panel.cell.brush.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962BF2558BB69005BBFA6 /* panel.cell.brush.v2.tr3 */; };
-		807962C52558BB69005BBFA6 /* panel.cell.record.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962C02558BB69005BBFA6 /* panel.cell.record.v2.tr3 */; };
-		807962C62558BB69005BBFA6 /* panel.cell.midi.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962C12558BB69005BBFA6 /* panel.cell.midi.v2.tr3 */; };
-		807962C72558BB69005BBFA6 /* panel.cell.speed.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962C22558BB69005BBFA6 /* panel.cell.speed.v2.tr3 */; };
-		807962D52558C031005BBFA6 /* sky.midi.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962D32558C031005BBFA6 /* sky.midi.v2.tr3 */; };
-		807962D62558C031005BBFA6 /* sky.main.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962D42558C031005BBFA6 /* sky.main.v2.tr3 */; };
-		807962E92558C3B3005BBFA6 /* panel.cell.gas.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962DF2558C3B2005BBFA6 /* panel.cell.gas.v2.tr3 */; };
-		807962EA2558C3B3005BBFA6 /* panel.cell.timeTunnel.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E02558C3B2005BBFA6 /* panel.cell.timeTunnel.v2.tr3 */; };
-		807962EB2558C3B3005BBFA6 /* panel.cell.fader.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E12558C3B2005BBFA6 /* panel.cell.fader.v2.tr3 */; };
-		807962EC2558C3B3005BBFA6 /* panel.cell.drift.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E22558C3B2005BBFA6 /* panel.cell.drift.v2.tr3 */; };
-		807962ED2558C3B3005BBFA6 /* panel.cell.average.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E32558C3B2005BBFA6 /* panel.cell.average.v2.tr3 */; };
-		807962EE2558C3B3005BBFA6 /* panel.cell.zhabatinski.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E42558C3B2005BBFA6 /* panel.cell.zhabatinski.v2.tr3 */; };
-		807962EF2558C3B3005BBFA6 /* panel.cell.melt.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E52558C3B3005BBFA6 /* panel.cell.melt.v2.tr3 */; };
-		807962F02558C3B3005BBFA6 /* panel.cell.modulo.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E62558C3B3005BBFA6 /* panel.cell.modulo.v2.tr3 */; };
-		807962F12558C3B3005BBFA6 /* panel.cell.slide.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E72558C3B3005BBFA6 /* panel.cell.slide.v2.tr3 */; };
-		807962F22558C3B3005BBFA6 /* panel.cell.fredkin.v2.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E82558C3B3005BBFA6 /* panel.cell.fredkin.v2.tr3 */; };
+		807962A22558B110005BBFA6 /* sky.shader.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 8079629F2558B110005BBFA6 /* sky.shader.tr3 */; };
+		807962A32558B110005BBFA6 /* panel.shader.weave.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962A02558B110005BBFA6 /* panel.shader.weave.tr3 */; };
+		807962A42558B110005BBFA6 /* panel.shader.tile.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962A12558B110005BBFA6 /* panel.shader.tile.tr3 */; };
+		807962B12558B68E005BBFA6 /* panel.cell.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962AF2558B68E005BBFA6 /* panel.cell.tr3 */; };
+		807962B22558B68E005BBFA6 /* panel.camera.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962B02558B68E005BBFA6 /* panel.camera.tr3 */; };
+		807962C32558BB69005BBFA6 /* panel.cell.camera.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962BE2558BB69005BBFA6 /* panel.cell.camera.tr3 */; };
+		807962C42558BB69005BBFA6 /* panel.cell.brush.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962BF2558BB69005BBFA6 /* panel.cell.brush.tr3 */; };
+		807962C52558BB69005BBFA6 /* panel.cell.record.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962C02558BB69005BBFA6 /* panel.cell.record.tr3 */; };
+		807962C62558BB69005BBFA6 /* panel.cell.midi.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962C12558BB69005BBFA6 /* panel.cell.midi.tr3 */; };
+		807962C72558BB69005BBFA6 /* panel.cell.speed.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962C22558BB69005BBFA6 /* panel.cell.speed.tr3 */; };
+		807962D52558C031005BBFA6 /* sky.midi.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962D32558C031005BBFA6 /* sky.midi.tr3 */; };
+		807962D62558C031005BBFA6 /* sky.main.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962D42558C031005BBFA6 /* sky.main.tr3 */; };
+		807962E92558C3B3005BBFA6 /* panel.cell.gas.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962DF2558C3B2005BBFA6 /* panel.cell.gas.tr3 */; };
+		807962EA2558C3B3005BBFA6 /* panel.cell.timeTunnel.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E02558C3B2005BBFA6 /* panel.cell.timeTunnel.tr3 */; };
+		807962EB2558C3B3005BBFA6 /* panel.cell.fader.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E12558C3B2005BBFA6 /* panel.cell.fader.tr3 */; };
+		807962EC2558C3B3005BBFA6 /* panel.cell.drift.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E22558C3B2005BBFA6 /* panel.cell.drift.tr3 */; };
+		807962ED2558C3B3005BBFA6 /* panel.cell.average.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E32558C3B2005BBFA6 /* panel.cell.average.tr3 */; };
+		807962EE2558C3B3005BBFA6 /* panel.cell.zhabatinski.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E42558C3B2005BBFA6 /* panel.cell.zhabatinski.tr3 */; };
+		807962EF2558C3B3005BBFA6 /* panel.cell.melt.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E52558C3B3005BBFA6 /* panel.cell.melt.tr3 */; };
+		807962F02558C3B3005BBFA6 /* panel.cell.modulo.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E62558C3B3005BBFA6 /* panel.cell.modulo.tr3 */; };
+		807962F12558C3B3005BBFA6 /* panel.cell.slide.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E72558C3B3005BBFA6 /* panel.cell.slide.tr3 */; };
+		807962F22558C3B3005BBFA6 /* panel.cell.fredkin.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 807962E82558C3B3005BBFA6 /* panel.cell.fredkin.tr3 */; };
 		808E90D923384CCD004EB9C9 /* MuFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E90D823384CCD004EB9C9 /* MuFile.swift */; };
 		808E90DC2338B4D0004EB9C9 /* ZIPFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 808E90DB2338B4D0004EB9C9 /* ZIPFoundation */; };
 		808E90DE2338B532004EB9C9 /* FileManager+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 808E90DD2338B532004EB9C9 /* FileManager+extension.swift */; };
 		80951DA823A1AA2700FB9DFA /* SkyPipeline+update.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80951DA723A1AA2700FB9DFA /* SkyPipeline+update.swift */; };
-		80B8ACCB23761B9D00F80DB0 /* panel.cell.record.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80B8ACCA23761B9D00F80DB0 /* panel.cell.record.tr3 */; };
+		80B70CC42576ACDE007BAAA8 /* AudioKit in Frameworks */ = {isa = PBXBuildFile; productRef = 80B70CC32576ACDE007BAAA8 /* AudioKit */; };
 		80B9E12525169D0E0074AEEA /* MuMidi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80B9E12425169D0E0074AEEA /* MuMidi.swift */; };
 		80C075362532268F0008820D /* MuDrawBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C075312532268F0008820D /* MuDrawBox.swift */; };
 		80C075372532268F0008820D /* MuDrawBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C075322532268F0008820D /* MuDrawBubble.swift */; };
@@ -102,12 +81,10 @@
 		80C07555253226E00008820D /* MuMetal in Frameworks */ = {isa = PBXBuildFile; productRef = 80C07554253226E00008820D /* MuMetal */; };
 		80C07557253226E00008820D /* MuUtilities in Frameworks */ = {isa = PBXBuildFile; productRef = 80C07556253226E00008820D /* MuUtilities */; };
 		80C07559253226E00008820D /* Tr3Thumb in Frameworks */ = {isa = PBXBuildFile; productRef = 80C07558253226E00008820D /* Tr3Thumb */; };
-		80DA1E5925212D4B00AE5C3C /* sky.midi.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80DA1E5825212D4B00AE5C3C /* sky.midi.tr3 */; };
 		80DC21872337ADB000B99CD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DC21852337ADB000B99CD9 /* LaunchScreen.storyboard */; };
 		80DC21882337ADB000B99CD9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 80DC21862337ADB000B99CD9 /* Main.storyboard */; };
 		80DC21892337AE9300B99CD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80DC21842337ACFB00B99CD9 /* Assets.xcassets */; };
 		80F846E1234D016A009022F7 /* cell.camera.metal in Sources */ = {isa = PBXBuildFile; fileRef = 80F846E0234D016A009022F7 /* cell.camera.metal */; };
-		80F846E3234D01D2009022F7 /* panel.cell.camera.tr3 in Resources */ = {isa = PBXBuildFile; fileRef = 80F846E2234D01D2009022F7 /* panel.cell.camera.tr3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -128,10 +105,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		801D953823A2A34300ABCF7F /* panel.camera.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.camera.tr3; sourceTree = "<group>"; };
-		802650D025574388005B4119 /* panel.shader.colorize.tr3.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = panel.shader.colorize.tr3.json; sourceTree = "<group>"; };
-		802650DD25574BC9005B4119 /* panel.shader.colorize.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.shader.colorize.v2.tr3; sourceTree = "<group>"; };
-		802650EB25575DBF005B4119 /* panel.cell.scroll.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.scroll.v2.tr3; sourceTree = "<group>"; };
+		802650D025574388005B4119 /* panel.shader.colorize.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = panel.shader.colorize.json; sourceTree = "<group>"; };
+		802650DD25574BC9005B4119 /* panel.shader.colorize.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.shader.colorize.tr3; sourceTree = "<group>"; };
+		802650EB25575DBF005B4119 /* panel.cell.scroll.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.scroll.tr3; sourceTree = "<group>"; };
+		804DC235257762BF00359295 /* sky.midi copy.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = "sky.midi copy.tr3"; sourceTree = "<group>"; };
 		804F949225747B7D0090F7A6 /* MuCubic */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuCubic; path = "Mu Packages/MuCubic"; sourceTree = "<group>"; };
 		80703D3C23A04F570093C016 /* cell.camix.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = cell.camix.metal; sourceTree = "<group>"; };
 		807048E723378A090001617D /* Muse Sky.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Muse Sky.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,56 +147,35 @@
 		8070497823378ADB0001617D /* SkyColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyColor.swift; sourceTree = "<group>"; };
 		8070497923378ADB0001617D /* SkyDock.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkyDock.swift; sourceTree = "<group>"; };
 		8070497B23378ADB0001617D /* Scratch2.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scratch2.h; sourceTree = "<group>"; };
-		80704A3123378B000001617D /* panel.cell.scroll.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.scroll.tr3; sourceTree = "<group>"; };
-		80704A3223378B000001617D /* panel.shader.colorize.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.shader.colorize.tr3; sourceTree = "<group>"; };
-		80704A3323378B000001617D /* panel.cell.melt.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.melt.tr3; sourceTree = "<group>"; };
-		80704A3423378B000001617D /* panel.cell.fredkin.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.fredkin.tr3; sourceTree = "<group>"; };
-		80704A3523378B000001617D /* panel.shader.tile.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.shader.tile.tr3; sourceTree = "<group>"; };
-		80704A3623378B000001617D /* panel.cell.average.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.average.tr3; sourceTree = "<group>"; };
-		80704A3723378B000001617D /* panel.cell.fader.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.fader.tr3; sourceTree = "<group>"; };
-		80704A3823378B000001617D /* panel.cell.slide.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.slide.tr3; sourceTree = "<group>"; };
-		80704A3923378B000001617D /* panel.shader.weave.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.shader.weave.tr3; sourceTree = "<group>"; };
-		80704A3A23378B000001617D /* panel.cell.gas.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.gas.tr3; sourceTree = "<group>"; };
-		80704A3B23378B000001617D /* panel.cell.speed.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.speed.tr3; sourceTree = "<group>"; };
-		80704A3C23378B000001617D /* panel.cell.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.tr3; sourceTree = "<group>"; };
-		80704A3D23378B000001617D /* panel.cell.drift.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.drift.tr3; sourceTree = "<group>"; };
-		80704A3E23378B000001617D /* panel.cell.brush.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.brush.tr3; sourceTree = "<group>"; };
-		80704A4D23378B000001617D /* sky.shader.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = sky.shader.tr3; sourceTree = "<group>"; };
-		80704A4F23378B000001617D /* panel.cell.modulo.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.modulo.tr3; sourceTree = "<group>"; };
-		80704A5023378B000001617D /* panel.cell.zhabatinski.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.zhabatinski.tr3; sourceTree = "<group>"; };
-		80704A5123378B000001617D /* sky.main.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = sky.main.tr3; sourceTree = "<group>"; };
-		80704A5223378B000001617D /* panel.cell.timeTunnel.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.timeTunnel.tr3; sourceTree = "<group>"; };
 		80704A7723378C1A0001617D /* Metal.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Metal.framework; path = System/Library/Frameworks/Metal.framework; sourceTree = SDKROOT; };
 		80704A7823378C1B0001617D /* MetalKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MetalKit.framework; path = System/Library/Frameworks/MetalKit.framework; sourceTree = SDKROOT; };
-		8079629025587F3C005BBFA6 /* panel.cell.midi.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.midi.tr3; sourceTree = "<group>"; };
 		8079629E2558A415005BBFA6 /* scratch3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scratch3.h; sourceTree = "<group>"; };
-		8079629F2558B110005BBFA6 /* sky.shader.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = sky.shader.v2.tr3; sourceTree = "<group>"; };
-		807962A02558B110005BBFA6 /* panel.shader.weave.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.shader.weave.v2.tr3; sourceTree = "<group>"; };
-		807962A12558B110005BBFA6 /* panel.shader.tile.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.shader.tile.v2.tr3; sourceTree = "<group>"; };
-		807962AF2558B68E005BBFA6 /* panel.cell.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.v2.tr3; sourceTree = "<group>"; };
-		807962B02558B68E005BBFA6 /* panel.camera.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.camera.v2.tr3; sourceTree = "<group>"; };
-		807962BE2558BB69005BBFA6 /* panel.cell.camera.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.camera.v2.tr3; sourceTree = "<group>"; };
-		807962BF2558BB69005BBFA6 /* panel.cell.brush.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.brush.v2.tr3; sourceTree = "<group>"; };
-		807962C02558BB69005BBFA6 /* panel.cell.record.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.record.v2.tr3; sourceTree = "<group>"; };
-		807962C12558BB69005BBFA6 /* panel.cell.midi.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.midi.v2.tr3; sourceTree = "<group>"; };
-		807962C22558BB69005BBFA6 /* panel.cell.speed.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.speed.v2.tr3; sourceTree = "<group>"; };
-		807962D32558C031005BBFA6 /* sky.midi.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = sky.midi.v2.tr3; sourceTree = "<group>"; };
-		807962D42558C031005BBFA6 /* sky.main.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = sky.main.v2.tr3; sourceTree = "<group>"; };
-		807962DF2558C3B2005BBFA6 /* panel.cell.gas.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.gas.v2.tr3; sourceTree = "<group>"; };
-		807962E02558C3B2005BBFA6 /* panel.cell.timeTunnel.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.timeTunnel.v2.tr3; sourceTree = "<group>"; };
-		807962E12558C3B2005BBFA6 /* panel.cell.fader.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.fader.v2.tr3; sourceTree = "<group>"; };
-		807962E22558C3B2005BBFA6 /* panel.cell.drift.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.drift.v2.tr3; sourceTree = "<group>"; };
-		807962E32558C3B2005BBFA6 /* panel.cell.average.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.average.v2.tr3; sourceTree = "<group>"; };
-		807962E42558C3B2005BBFA6 /* panel.cell.zhabatinski.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.zhabatinski.v2.tr3; sourceTree = "<group>"; };
-		807962E52558C3B3005BBFA6 /* panel.cell.melt.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.melt.v2.tr3; sourceTree = "<group>"; };
-		807962E62558C3B3005BBFA6 /* panel.cell.modulo.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.modulo.v2.tr3; sourceTree = "<group>"; };
-		807962E72558C3B3005BBFA6 /* panel.cell.slide.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.slide.v2.tr3; sourceTree = "<group>"; };
-		807962E82558C3B3005BBFA6 /* panel.cell.fredkin.v2.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.fredkin.v2.tr3; sourceTree = "<group>"; };
+		8079629F2558B110005BBFA6 /* sky.shader.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = sky.shader.tr3; sourceTree = "<group>"; };
+		807962A02558B110005BBFA6 /* panel.shader.weave.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.shader.weave.tr3; sourceTree = "<group>"; };
+		807962A12558B110005BBFA6 /* panel.shader.tile.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.shader.tile.tr3; sourceTree = "<group>"; };
+		807962AF2558B68E005BBFA6 /* panel.cell.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.tr3; sourceTree = "<group>"; };
+		807962B02558B68E005BBFA6 /* panel.camera.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.camera.tr3; sourceTree = "<group>"; };
+		807962BE2558BB69005BBFA6 /* panel.cell.camera.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.camera.tr3; sourceTree = "<group>"; };
+		807962BF2558BB69005BBFA6 /* panel.cell.brush.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.brush.tr3; sourceTree = "<group>"; };
+		807962C02558BB69005BBFA6 /* panel.cell.record.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.record.tr3; sourceTree = "<group>"; };
+		807962C12558BB69005BBFA6 /* panel.cell.midi.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.midi.tr3; sourceTree = "<group>"; };
+		807962C22558BB69005BBFA6 /* panel.cell.speed.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.speed.tr3; sourceTree = "<group>"; };
+		807962D32558C031005BBFA6 /* sky.midi.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = sky.midi.tr3; sourceTree = "<group>"; };
+		807962D42558C031005BBFA6 /* sky.main.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = sky.main.tr3; sourceTree = "<group>"; };
+		807962DF2558C3B2005BBFA6 /* panel.cell.gas.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.gas.tr3; sourceTree = "<group>"; };
+		807962E02558C3B2005BBFA6 /* panel.cell.timeTunnel.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.timeTunnel.tr3; sourceTree = "<group>"; };
+		807962E12558C3B2005BBFA6 /* panel.cell.fader.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.fader.tr3; sourceTree = "<group>"; };
+		807962E22558C3B2005BBFA6 /* panel.cell.drift.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.drift.tr3; sourceTree = "<group>"; };
+		807962E32558C3B2005BBFA6 /* panel.cell.average.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.average.tr3; sourceTree = "<group>"; };
+		807962E42558C3B2005BBFA6 /* panel.cell.zhabatinski.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.zhabatinski.tr3; sourceTree = "<group>"; };
+		807962E52558C3B3005BBFA6 /* panel.cell.melt.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.melt.tr3; sourceTree = "<group>"; };
+		807962E62558C3B3005BBFA6 /* panel.cell.modulo.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.modulo.tr3; sourceTree = "<group>"; };
+		807962E72558C3B3005BBFA6 /* panel.cell.slide.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.slide.tr3; sourceTree = "<group>"; };
+		807962E82558C3B3005BBFA6 /* panel.cell.fredkin.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.fredkin.tr3; sourceTree = "<group>"; };
 		8082FD8624B2589A002F880A /* scratch1.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = scratch1.h; sourceTree = "<group>"; };
 		808E90D823384CCD004EB9C9 /* MuFile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuFile.swift; sourceTree = "<group>"; };
 		808E90DD2338B532004EB9C9 /* FileManager+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FileManager+extension.swift"; sourceTree = "<group>"; };
 		80951DA723A1AA2700FB9DFA /* SkyPipeline+update.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SkyPipeline+update.swift"; sourceTree = "<group>"; };
-		80B8ACCA23761B9D00F80DB0 /* panel.cell.record.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.record.tr3; sourceTree = "<group>"; };
 		80B9E12425169D0E0074AEEA /* MuMidi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuMidi.swift; sourceTree = SOURCE_ROOT; };
 		80C07528253226590008820D /* MuColor */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuColor; path = "Mu Packages/MuColor"; sourceTree = "<group>"; };
 		80C075312532268F0008820D /* MuDrawBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MuDrawBox.swift; sourceTree = "<group>"; };
@@ -231,12 +187,10 @@
 		80C07542253226990008820D /* MuMetal */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuMetal; path = "Mu Packages/MuMetal"; sourceTree = "<group>"; };
 		80C075462532269E0008820D /* MuUtilities */ = {isa = PBXFileReference; lastKnownFileType = folder; name = MuUtilities; path = "Mu Packages/MuUtilities"; sourceTree = "<group>"; };
 		80C0754A253226A20008820D /* Tr3Thumb */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tr3Thumb; path = "Mu Packages/Tr3Thumb"; sourceTree = "<group>"; };
-		80DA1E5825212D4B00AE5C3C /* sky.midi.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = sky.midi.tr3; sourceTree = "<group>"; };
 		80DC21842337ACFB00B99CD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80DC21852337ADB000B99CD9 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		80DC21862337ADB000B99CD9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		80F846E0234D016A009022F7 /* cell.camera.metal */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.metal; path = cell.camera.metal; sourceTree = "<group>"; };
-		80F846E2234D01D2009022F7 /* panel.cell.camera.tr3 */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = panel.cell.camera.tr3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -248,13 +202,13 @@
 				80C07557253226E00008820D /* MuUtilities in Frameworks */,
 				80C0754F253226E00008820D /* MuColor in Frameworks */,
 				80C07551253226E00008820D /* MuCubic in Frameworks */,
-				8062A7C225168FB300E61D38 /* AudioKit in Frameworks */,
 				80704B3C23378DB40001617D /* Tr3 in Frameworks */,
 				80704A7923378C1B0001617D /* Metal.framework in Frameworks */,
 				80704A7A23378C1B0001617D /* MetalKit.framework in Frameworks */,
 				80C07553253226E00008820D /* MuExtensions in Frameworks */,
 				80C07559253226E00008820D /* Tr3Thumb in Frameworks */,
 				808E90DC2338B4D0004EB9C9 /* ZIPFoundation in Frameworks */,
+				80B70CC42576ACDE007BAAA8 /* AudioKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,8 +349,9 @@
 		80704A3023378B000001617D /* tr3 */ = {
 			isa = PBXGroup;
 			children = (
-				807962D12558BF8F005BBFA6 /* v1 */,
-				807962D22558BF95005BBFA6 /* v2 */,
+				807962D42558C031005BBFA6 /* sky.main.tr3 */,
+				807962D32558C031005BBFA6 /* sky.midi.tr3 */,
+				804DC235257762BF00359295 /* sky.midi copy.tr3 */,
 				80B8ACA72375E6A100F80DB0 /* shader */,
 				80B8ACA62375E65900F80DB0 /* panel.cell */,
 			);
@@ -412,125 +367,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		807962AB2558B5F3005BBFA6 /* v2 */ = {
-			isa = PBXGroup;
-			children = (
-				807962A12558B110005BBFA6 /* panel.shader.tile.v2.tr3 */,
-				807962A02558B110005BBFA6 /* panel.shader.weave.v2.tr3 */,
-				8079629F2558B110005BBFA6 /* sky.shader.v2.tr3 */,
-				802650DD25574BC9005B4119 /* panel.shader.colorize.v2.tr3 */,
-				802650D025574388005B4119 /* panel.shader.colorize.tr3.json */,
-			);
-			path = v2;
-			sourceTree = "<group>";
-		};
-		807962B62558B693005BBFA6 /* v2 */ = {
-			isa = PBXGroup;
-			children = (
-				807962B02558B68E005BBFA6 /* panel.camera.v2.tr3 */,
-				807962AF2558B68E005BBFA6 /* panel.cell.v2.tr3 */,
-			);
-			path = v2;
-			sourceTree = "<group>";
-		};
-		807962BD2558BAFF005BBFA6 /* v2 */ = {
-			isa = PBXGroup;
-			children = (
-				802650EB25575DBF005B4119 /* panel.cell.scroll.v2.tr3 */,
-				807962BF2558BB69005BBFA6 /* panel.cell.brush.v2.tr3 */,
-				807962BE2558BB69005BBFA6 /* panel.cell.camera.v2.tr3 */,
-				807962C12558BB69005BBFA6 /* panel.cell.midi.v2.tr3 */,
-				807962C02558BB69005BBFA6 /* panel.cell.record.v2.tr3 */,
-				807962C22558BB69005BBFA6 /* panel.cell.speed.v2.tr3 */,
-			);
-			path = v2;
-			sourceTree = "<group>";
-		};
-		807962CE2558BF62005BBFA6 /* v1 */ = {
-			isa = PBXGroup;
-			children = (
-				8079629025587F3C005BBFA6 /* panel.cell.midi.tr3 */,
-				80704A3B23378B000001617D /* panel.cell.speed.tr3 */,
-				80F846E2234D01D2009022F7 /* panel.cell.camera.tr3 */,
-				80B8ACCA23761B9D00F80DB0 /* panel.cell.record.tr3 */,
-				80704A3E23378B000001617D /* panel.cell.brush.tr3 */,
-				80704A3123378B000001617D /* panel.cell.scroll.tr3 */,
-			);
-			path = v1;
-			sourceTree = "<group>";
-		};
-		807962CF2558BF6F005BBFA6 /* v1 */ = {
-			isa = PBXGroup;
-			children = (
-				801D953823A2A34300ABCF7F /* panel.camera.tr3 */,
-				80704A3C23378B000001617D /* panel.cell.tr3 */,
-			);
-			path = v1;
-			sourceTree = "<group>";
-		};
-		807962D02558BF7C005BBFA6 /* v1 */ = {
-			isa = PBXGroup;
-			children = (
-				80704A3223378B000001617D /* panel.shader.colorize.tr3 */,
-				80704A4D23378B000001617D /* sky.shader.tr3 */,
-				80704A3923378B000001617D /* panel.shader.weave.tr3 */,
-				80704A3523378B000001617D /* panel.shader.tile.tr3 */,
-			);
-			path = v1;
-			sourceTree = "<group>";
-		};
-		807962D12558BF8F005BBFA6 /* v1 */ = {
-			isa = PBXGroup;
-			children = (
-				80DA1E5825212D4B00AE5C3C /* sky.midi.tr3 */,
-				80704A5123378B000001617D /* sky.main.tr3 */,
-			);
-			path = v1;
-			sourceTree = "<group>";
-		};
-		807962D22558BF95005BBFA6 /* v2 */ = {
-			isa = PBXGroup;
-			children = (
-				807962D42558C031005BBFA6 /* sky.main.v2.tr3 */,
-				807962D32558C031005BBFA6 /* sky.midi.v2.tr3 */,
-			);
-			path = v2;
-			sourceTree = "<group>";
-		};
-		807962DD2558C320005BBFA6 /* v1 */ = {
-			isa = PBXGroup;
-			children = (
-				80704A3323378B000001617D /* panel.cell.melt.tr3 */,
-				80704A3423378B000001617D /* panel.cell.fredkin.tr3 */,
-				80704A3623378B000001617D /* panel.cell.average.tr3 */,
-				80704A3723378B000001617D /* panel.cell.fader.tr3 */,
-				80704A3823378B000001617D /* panel.cell.slide.tr3 */,
-				80704A3A23378B000001617D /* panel.cell.gas.tr3 */,
-				80704A3D23378B000001617D /* panel.cell.drift.tr3 */,
-				80704A4F23378B000001617D /* panel.cell.modulo.tr3 */,
-				80704A5023378B000001617D /* panel.cell.zhabatinski.tr3 */,
-				80704A5223378B000001617D /* panel.cell.timeTunnel.tr3 */,
-			);
-			path = v1;
-			sourceTree = "<group>";
-		};
-		807962DE2558C32A005BBFA6 /* v2 */ = {
-			isa = PBXGroup;
-			children = (
-				807962E32558C3B2005BBFA6 /* panel.cell.average.v2.tr3 */,
-				807962E22558C3B2005BBFA6 /* panel.cell.drift.v2.tr3 */,
-				807962E12558C3B2005BBFA6 /* panel.cell.fader.v2.tr3 */,
-				807962E82558C3B3005BBFA6 /* panel.cell.fredkin.v2.tr3 */,
-				807962DF2558C3B2005BBFA6 /* panel.cell.gas.v2.tr3 */,
-				807962E52558C3B3005BBFA6 /* panel.cell.melt.v2.tr3 */,
-				807962E62558C3B3005BBFA6 /* panel.cell.modulo.v2.tr3 */,
-				807962E72558C3B3005BBFA6 /* panel.cell.slide.v2.tr3 */,
-				807962E02558C3B2005BBFA6 /* panel.cell.timeTunnel.v2.tr3 */,
-				807962E42558C3B2005BBFA6 /* panel.cell.zhabatinski.v2.tr3 */,
-			);
-			path = v2;
-			sourceTree = "<group>";
-		};
 		808E90D723384C94004EB9C9 /* MuFiles */ = {
 			isa = PBXGroup;
 			children = (
@@ -543,8 +379,8 @@
 		80B8ACA62375E65900F80DB0 /* panel.cell */ = {
 			isa = PBXGroup;
 			children = (
-				807962CF2558BF6F005BBFA6 /* v1 */,
-				807962B62558B693005BBFA6 /* v2 */,
+				807962B02558B68E005BBFA6 /* panel.camera.tr3 */,
+				807962AF2558B68E005BBFA6 /* panel.cell.tr3 */,
 				80B8ACCC23761BF500F80DB0 /* other */,
 				80B8ACA82375E6CD00F80DB0 /* rule */,
 			);
@@ -554,8 +390,11 @@
 		80B8ACA72375E6A100F80DB0 /* shader */ = {
 			isa = PBXGroup;
 			children = (
-				807962D02558BF7C005BBFA6 /* v1 */,
-				807962AB2558B5F3005BBFA6 /* v2 */,
+				8079629F2558B110005BBFA6 /* sky.shader.tr3 */,
+				807962A12558B110005BBFA6 /* panel.shader.tile.tr3 */,
+				807962A02558B110005BBFA6 /* panel.shader.weave.tr3 */,
+				802650DD25574BC9005B4119 /* panel.shader.colorize.tr3 */,
+				802650D025574388005B4119 /* panel.shader.colorize.json */,
 			);
 			path = shader;
 			sourceTree = "<group>";
@@ -563,8 +402,16 @@
 		80B8ACA82375E6CD00F80DB0 /* rule */ = {
 			isa = PBXGroup;
 			children = (
-				807962DD2558C320005BBFA6 /* v1 */,
-				807962DE2558C32A005BBFA6 /* v2 */,
+				807962E32558C3B2005BBFA6 /* panel.cell.average.tr3 */,
+				807962E22558C3B2005BBFA6 /* panel.cell.drift.tr3 */,
+				807962E12558C3B2005BBFA6 /* panel.cell.fader.tr3 */,
+				807962E82558C3B3005BBFA6 /* panel.cell.fredkin.tr3 */,
+				807962DF2558C3B2005BBFA6 /* panel.cell.gas.tr3 */,
+				807962E52558C3B3005BBFA6 /* panel.cell.melt.tr3 */,
+				807962E62558C3B3005BBFA6 /* panel.cell.modulo.tr3 */,
+				807962E72558C3B3005BBFA6 /* panel.cell.slide.tr3 */,
+				807962E02558C3B2005BBFA6 /* panel.cell.timeTunnel.tr3 */,
+				807962E42558C3B2005BBFA6 /* panel.cell.zhabatinski.tr3 */,
 			);
 			path = rule;
 			sourceTree = "<group>";
@@ -572,8 +419,12 @@
 		80B8ACCC23761BF500F80DB0 /* other */ = {
 			isa = PBXGroup;
 			children = (
-				807962CE2558BF62005BBFA6 /* v1 */,
-				807962BD2558BAFF005BBFA6 /* v2 */,
+				802650EB25575DBF005B4119 /* panel.cell.scroll.tr3 */,
+				807962BF2558BB69005BBFA6 /* panel.cell.brush.tr3 */,
+				807962BE2558BB69005BBFA6 /* panel.cell.camera.tr3 */,
+				807962C12558BB69005BBFA6 /* panel.cell.midi.tr3 */,
+				807962C02558BB69005BBFA6 /* panel.cell.record.tr3 */,
+				807962C22558BB69005BBFA6 /* panel.cell.speed.tr3 */,
 			);
 			path = other;
 			sourceTree = "<group>";
@@ -618,13 +469,13 @@
 			packageProductDependencies = (
 				80704B3B23378DB40001617D /* Tr3 */,
 				808E90DB2338B4D0004EB9C9 /* ZIPFoundation */,
-				8062A7C125168FB300E61D38 /* AudioKit */,
 				80C0754E253226E00008820D /* MuColor */,
 				80C07550253226E00008820D /* MuCubic */,
 				80C07552253226E00008820D /* MuExtensions */,
 				80C07554253226E00008820D /* MuMetal */,
 				80C07556253226E00008820D /* MuUtilities */,
 				80C07558253226E00008820D /* Tr3Thumb */,
+				80B70CC32576ACDE007BAAA8 /* AudioKit */,
 			);
 			productName = MuseSky;
 			productReference = 807048E723378A090001617D /* Muse Sky.app */;
@@ -719,57 +570,34 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				80704A7323378B000001617D /* panel.cell.timeTunnel.tr3 in Resources */,
-				807962A22558B110005BBFA6 /* sky.shader.v2.tr3 in Resources */,
-				802650EC25575DBF005B4119 /* panel.cell.scroll.v2.tr3 in Resources */,
-				801D953923A2A34300ABCF7F /* panel.camera.tr3 in Resources */,
-				807962B12558B68E005BBFA6 /* panel.cell.v2.tr3 in Resources */,
-				80704A6E23378B000001617D /* sky.shader.tr3 in Resources */,
-				80704A5923378B000001617D /* panel.cell.fader.tr3 in Resources */,
-				807962C32558BB69005BBFA6 /* panel.cell.camera.v2.tr3 in Resources */,
-				807962C42558BB69005BBFA6 /* panel.cell.brush.v2.tr3 in Resources */,
-				807962ED2558C3B3005BBFA6 /* panel.cell.average.v2.tr3 in Resources */,
-				80704A5C23378B000001617D /* panel.cell.gas.tr3 in Resources */,
+				807962A22558B110005BBFA6 /* sky.shader.tr3 in Resources */,
+				802650EC25575DBF005B4119 /* panel.cell.scroll.tr3 in Resources */,
+				807962B12558B68E005BBFA6 /* panel.cell.tr3 in Resources */,
+				807962C32558BB69005BBFA6 /* panel.cell.camera.tr3 in Resources */,
+				807962C42558BB69005BBFA6 /* panel.cell.brush.tr3 in Resources */,
+				807962ED2558C3B3005BBFA6 /* panel.cell.average.tr3 in Resources */,
 				80DC21892337AE9300B99CD9 /* Assets.xcassets in Resources */,
-				807962D62558C031005BBFA6 /* sky.main.v2.tr3 in Resources */,
-				80704A7023378B000001617D /* panel.cell.modulo.tr3 in Resources */,
-				807962C62558BB69005BBFA6 /* panel.cell.midi.v2.tr3 in Resources */,
+				807962D62558C031005BBFA6 /* sky.main.tr3 in Resources */,
+				807962C62558BB69005BBFA6 /* panel.cell.midi.tr3 in Resources */,
 				80DC21882337ADB000B99CD9 /* Main.storyboard in Resources */,
-				807962B22558B68E005BBFA6 /* panel.camera.v2.tr3 in Resources */,
-				802650DE25574BC9005B4119 /* panel.shader.colorize.v2.tr3 in Resources */,
-				80704A5523378B000001617D /* panel.cell.melt.tr3 in Resources */,
-				80704A7123378B000001617D /* panel.cell.zhabatinski.tr3 in Resources */,
-				80704A6023378B000001617D /* panel.cell.brush.tr3 in Resources */,
-				807962EA2558C3B3005BBFA6 /* panel.cell.timeTunnel.v2.tr3 in Resources */,
-				80704A5B23378B000001617D /* panel.shader.weave.tr3 in Resources */,
-				807962D52558C031005BBFA6 /* sky.midi.v2.tr3 in Resources */,
-				80704A5D23378B000001617D /* panel.cell.speed.tr3 in Resources */,
-				807962A32558B110005BBFA6 /* panel.shader.weave.v2.tr3 in Resources */,
-				80704A5823378B000001617D /* panel.cell.average.tr3 in Resources */,
-				807962C72558BB69005BBFA6 /* panel.cell.speed.v2.tr3 in Resources */,
-				80704A5623378B000001617D /* panel.cell.fredkin.tr3 in Resources */,
-				80704A7223378B000001617D /* sky.main.tr3 in Resources */,
-				80B8ACCB23761B9D00F80DB0 /* panel.cell.record.tr3 in Resources */,
-				80DA1E5925212D4B00AE5C3C /* sky.midi.tr3 in Resources */,
-				80704A5A23378B000001617D /* panel.cell.slide.tr3 in Resources */,
-				807962EF2558C3B3005BBFA6 /* panel.cell.melt.v2.tr3 in Resources */,
-				807962C52558BB69005BBFA6 /* panel.cell.record.v2.tr3 in Resources */,
-				807962F02558C3B3005BBFA6 /* panel.cell.modulo.v2.tr3 in Resources */,
-				80F846E3234D01D2009022F7 /* panel.cell.camera.tr3 in Resources */,
-				807962EB2558C3B3005BBFA6 /* panel.cell.fader.v2.tr3 in Resources */,
-				80704A5F23378B000001617D /* panel.cell.drift.tr3 in Resources */,
-				8079629125587F3C005BBFA6 /* panel.cell.midi.tr3 in Resources */,
-				807962EE2558C3B3005BBFA6 /* panel.cell.zhabatinski.v2.tr3 in Resources */,
-				807962E92558C3B3005BBFA6 /* panel.cell.gas.v2.tr3 in Resources */,
-				80704A5E23378B000001617D /* panel.cell.tr3 in Resources */,
-				807962F12558C3B3005BBFA6 /* panel.cell.slide.v2.tr3 in Resources */,
-				807962A42558B110005BBFA6 /* panel.shader.tile.v2.tr3 in Resources */,
-				807962EC2558C3B3005BBFA6 /* panel.cell.drift.v2.tr3 in Resources */,
-				80704A5723378B000001617D /* panel.shader.tile.tr3 in Resources */,
+				807962B22558B68E005BBFA6 /* panel.camera.tr3 in Resources */,
+				802650DE25574BC9005B4119 /* panel.shader.colorize.tr3 in Resources */,
+				807962EA2558C3B3005BBFA6 /* panel.cell.timeTunnel.tr3 in Resources */,
+				807962D52558C031005BBFA6 /* sky.midi.tr3 in Resources */,
+				807962A32558B110005BBFA6 /* panel.shader.weave.tr3 in Resources */,
+				807962C72558BB69005BBFA6 /* panel.cell.speed.tr3 in Resources */,
+				807962EF2558C3B3005BBFA6 /* panel.cell.melt.tr3 in Resources */,
+				807962C52558BB69005BBFA6 /* panel.cell.record.tr3 in Resources */,
+				807962F02558C3B3005BBFA6 /* panel.cell.modulo.tr3 in Resources */,
+				807962EB2558C3B3005BBFA6 /* panel.cell.fader.tr3 in Resources */,
+				807962EE2558C3B3005BBFA6 /* panel.cell.zhabatinski.tr3 in Resources */,
+				807962E92558C3B3005BBFA6 /* panel.cell.gas.tr3 in Resources */,
+				807962F12558C3B3005BBFA6 /* panel.cell.slide.tr3 in Resources */,
+				804DC236257762BF00359295 /* sky.midi copy.tr3 in Resources */,
+				807962A42558B110005BBFA6 /* panel.shader.tile.tr3 in Resources */,
+				807962EC2558C3B3005BBFA6 /* panel.cell.drift.tr3 in Resources */,
 				80DC21872337ADB000B99CD9 /* LaunchScreen.storyboard in Resources */,
-				80704A5423378B000001617D /* panel.shader.colorize.tr3 in Resources */,
-				80704A5323378B000001617D /* panel.cell.scroll.tr3 in Resources */,
-				807962F22558C3B3005BBFA6 /* panel.cell.fredkin.v2.tr3 in Resources */,
+				807962F22558C3B3005BBFA6 /* panel.cell.fredkin.tr3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -904,6 +732,7 @@
 				ENABLE_TESTABILITY = NO;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -919,7 +748,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -964,6 +793,7 @@
 				ENABLE_NS_ASSERTIONS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -974,7 +804,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
@@ -994,6 +824,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muse.MuseSky;
 				PRODUCT_NAME = "Muse Sky";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -1014,6 +845,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				ONLY_ACTIVE_ARCH = NO;
 				PRODUCT_BUNDLE_IDENTIFIER = com.muse.MuseSky;
 				PRODUCT_NAME = "Muse Sky";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
@@ -1152,7 +984,7 @@
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/AudioKit/AudioKit";
 			requirement = {
-				branch = staging;
+				branch = "v5-main";
 				kind = branch;
 			};
 		};
@@ -1175,11 +1007,6 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		8062A7C125168FB300E61D38 /* AudioKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 8062A7C025168FB300E61D38 /* XCRemoteSwiftPackageReference "AudioKit" */;
-			productName = AudioKit;
-		};
 		80704B3B23378DB40001617D /* Tr3 */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 80704B3A23378DB40001617D /* XCRemoteSwiftPackageReference "Tr3" */;
@@ -1189,6 +1016,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 808E90DA2338B4D0004EB9C9 /* XCRemoteSwiftPackageReference "ZIPFoundation" */;
 			productName = ZIPFoundation;
+		};
+		80B70CC32576ACDE007BAAA8 /* AudioKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8062A7C025168FB300E61D38 /* XCRemoteSwiftPackageReference "AudioKit" */;
+			productName = AudioKit;
 		};
 		80C0754E253226E00008820D /* MuColor */ = {
 			isa = XCSwiftPackageProductDependency;

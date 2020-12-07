@@ -1,0 +1,95 @@
+
+sky { // visual music
+    midi { // musical instrument device interface
+        in { // midi input
+            note { // note on/off from 0 thru 127
+                on (num 0..127, velo 0..127, chan 1..32, port 1..16, time 0)
+                off (num 0..127, velo 0..127, chan 1..32, port 1..16, time 0)
+            }
+            controller (num 0..127, val 0..127, chan 1..32, port 1..16, time 0)
+            afterTouch (num 0..127, val 0..127, chan 1..32, port 1..16, time 0)
+            pitchBend (val 0, chan 1..32, port 1..16, time 0)
+            programChange (num  0..255, chan 1..32, port 1..16, time 0)
+        }
+        
+        out ©in //<ⓒ in // midi output copy of input and mapped by name
+        
+        cc { // <ⓝ in.controller.num 
+            // multimap dispatch based on number value,
+            // where n.controller tupples are displatched
+            // cc.child based on the value of controller.num
+            // so, controller(64, 127, 1, 1, 12345)
+            // will get dispatched to holdPedal(64),
+            // which acts as a passthru
+
+            bankSelect (0)
+            modulationWheel (1)
+            breathController (2)
+            undefined3 (3)
+            foetPedal (4)
+            portamentoTime(5).v(0..1) << ..
+            dataEntry (6)
+            volume (7)
+            balance (8)
+            undefined (9)
+            panPosition (10)
+            expression (11)
+            effectControl1 (12)
+            effectControl2 (13)
+
+            undefined_14_31 (14..31)
+
+            controller (32..63) // 0..31
+
+            holdPedal (64)      // controller (num 64, val, chan, port, time)
+            portamento (65)     // (on/off)
+            sostenutoPedal (66) // (on/off)
+            softPedal (67)      // (on/off)
+            legatoPedal (68)    // (on/off)
+            hold2Pedal (69)     // (on/off)
+            soundVariation (70)
+            resonance (71)      // (Timbre)
+            soundReleaseTime (72)
+            soundAttackTime (73)
+            frequencyCutoff (74) // (Brightness)
+
+            soundControl6 (75)
+            soundControl7 (76)
+            soundControl8 (77)
+            soundControl9 (78)
+            soundControl10 (79)
+
+            button1 (80) decayor (80) rolandToneLevel1 (80)
+            button2 (81) hiPassFilter (81) rolandToneLevel2 (81)
+            button3 (82) generalPurpose (82) rolandToneLevel3 (82)
+            button4 (83) generalPurpose (83) rolandToneLevel4 (83)
+
+            portamentoAmount (84)
+
+            undefined_85_90 (85..90)
+
+            reverbLevel (91)
+            tremoloLevel (92)
+            chorusLevel (93)
+            detuneLevel (94)
+            phaserLevel (95)
+            dataButtonIncrement (96)
+            dataButtonDecrement (97)
+            nonregisteredParameterLSB (98)
+            nonregisteredParameterMSB (99)
+            registeredParameterLSB (100)
+            registeredParameterMSB (101) 
+
+            undefined_102_119 (102..119)
+
+            allSoundOff (120)
+            allControllersOff (121)
+            localKeyboard (122) // (on/off)
+            allNotesOff (123)
+            omniModeOff (124)
+            omniModeOn (125)
+            monoOperation (126)
+            polyMode (127)
+        }
+    }
+}

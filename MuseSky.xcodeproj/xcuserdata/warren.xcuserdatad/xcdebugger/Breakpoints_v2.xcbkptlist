@@ -7,17 +7,49 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "A63EFC41-26CA-45E3-9F5F-13C36AACFF13"
+            uuid = "9159C56E-79FA-442B-BB7F-B23ED0EC62E5"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Sky/SkyPipeline.swift"
+            filePath = "../../Library/Developer/Xcode/DerivedData/MuseSky-fbefuoxannjuklckgubnwxsmhrar/SourcePackages/checkouts/Tr3/Sources/Tr3/Tr3Parse+file.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "274"
-            endingLineNumber = "274"
-            landmarkName = "swap(inNode:)"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
+            landmarkName = "parseTr3(_:_:)"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3767524E-5D1F-4584-A7E8-46E6D33F0F02"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/MuseSky-fbefuoxannjuklckgubnwxsmhrar/SourcePackages/checkouts/Par/Sources/Par/ParStr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "4DCE182C-268F-4BC4-A068-5605018274B5"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "../../Library/Developer/Xcode/DerivedData/MuseSky-fbefuoxannjuklckgubnwxsmhrar/SourcePackages/checkouts/Par/Sources/Par/ParStr.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "199"
+            endingLineNumber = "199"
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

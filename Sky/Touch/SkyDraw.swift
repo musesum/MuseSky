@@ -38,25 +38,23 @@ class SkyDraw: NSObject {
     }
 
     func bindTr3(_ root: Tr3) {
-
-        if  let sky = root.findPath("sky") ,
-            let input = sky.findPath("input"),
-            let brush = sky.findPath("draw.brush"),
-            let line = sky.findPath("draw.line") {
-
-            brushTilt˚ = input.findPath("tilt"); brushTilt˚?.addClosure { t,_ in self.brushTilt = t.BoolVal() }
-            brushPress˚ = brush.findPath("press"); brushPress˚?.addClosure { t,_ in self.brushPress = t.BoolVal() }
-            brushSize˚ = brush.findPath("size"); brushSize˚?.addClosure { t,_ in self.brushSize = t.CGFloatVal() ?? 1 }
-            linePrev˚ = line.findPath("prev"); linePrev˚?.addClosure { t,_ in self.linePrev = t.CGPointVal() ?? .zero }
-            lineNext˚ = line.findPath("next"); lineNext˚?.addClosure { t,_ in self.lineNext = t.CGPointVal() ?? .zero }
-
-            inForce˚ = input.findPath("force"); inForce˚?.addClosure { t,_ in self.inForce = t.CGFloatVal() ?? 1 }
-            inRadius˚ = input.findPath("radius"); inRadius˚?.addClosure { t,_ in self.inRadius = t.CGFloatVal() ?? 1 }
-            inAzimuth˚ = input.findPath("azimuth"); inAzimuth˚?.addClosure { t,_ in self.inAzimuth = t.CGPointVal() ?? .zero }
+        func lost(_ name: String) {
+            print("*** bindTr3 could not find \'\(name)\'")
         }
-        else {
-            print("*** could not find either sky, input, draw.brush, shape.line")
-        }
+        guard let sky = root.findPath("sky") else { return lost("sky") }
+        guard let input = sky.findPath("input") else { return lost("input") }
+        guard let brush = sky.findPath("draw.brush") else { return lost("draw.brush") }
+        guard let line = sky.findPath("draw.line") else { return lost("draw.line") }
+
+        brushTilt˚ = input.findPath("tilt"); brushTilt˚?.addClosure { t,_ in self.brushTilt = t.BoolVal() }
+        brushPress˚ = brush.findPath("press"); brushPress˚?.addClosure { t,_ in self.brushPress = t.BoolVal() }
+        brushSize˚ = brush.findPath("size"); brushSize˚?.addClosure { t,_ in self.brushSize = t.CGFloatVal() ?? 1 }
+        linePrev˚ = line.findPath("prev"); linePrev˚?.addClosure { t,_ in self.linePrev = t.CGPointVal() ?? .zero }
+        lineNext˚ = line.findPath("next"); lineNext˚?.addClosure { t,_ in self.lineNext = t.CGPointVal() ?? .zero }
+
+        inForce˚ = input.findPath("force"); inForce˚?.addClosure { t,_ in self.inForce = t.CGFloatVal() ?? 1 }
+        inRadius˚ = input.findPath("radius"); inRadius˚?.addClosure { t,_ in self.inRadius = t.CGFloatVal() ?? 1 }
+        inAzimuth˚ = input.findPath("azimuth"); inAzimuth˚?.addClosure { t,_ in self.inAzimuth = t.CGPointVal() ?? .zero }
     }
 
     public func update(_ item: TouchItem) -> CGFloat {

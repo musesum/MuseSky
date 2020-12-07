@@ -1,5 +1,6 @@
 import UIKit
 import Tr3
+import Par
 import MuMetal
 
 class SkyTr3: NSObject {
@@ -41,11 +42,9 @@ class SkyTr3: NSObject {
             initScreenFill()
             initCameraFlip()
         }
-
     }
 
     /// fill screen callback to clear universe
-    
     func initScreenFill() {
 
         func fillDraw(_ value: Float?) {
@@ -124,11 +123,10 @@ class SkyTr3: NSObject {
         }
 
         parseFile("sky.main")
-        parseFile("sky.shader")
         parseFile("sky.midi")
+        parseFile("sky.shader")
         parseFile("panel.cell")
         parseFile("panel.camera")
-
         parseFile("panel.cell.fader")
         parseFile("panel.cell.average")
         parseFile("panel.cell.melt")
@@ -142,8 +140,8 @@ class SkyTr3: NSObject {
         parseFile("panel.cell.scroll")
         parseFile("panel.shader.tile")
         parseFile("panel.cell.camera")
-        parseFile("panel.cell.record") //?? 
-        parseFile("panel.speed")
+        parseFile("panel.cell.record")
+        parseFile("panel.cell.speed")
 
         //let script = root.makeScript(0,pretty: false)
         //print(script)
