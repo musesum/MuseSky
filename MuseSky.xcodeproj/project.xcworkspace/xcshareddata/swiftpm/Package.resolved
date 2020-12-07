@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/musesum/Par.git",
         "state": {
           "branch": null,
-          "revision": "777259dd63c745c722efa9cbc0611efd8ef80cab",
-          "version": "0.2.2"
+          "revision": "8dfe1cb74a22fca5a1b85f5951bf556f849afc13",
+          "version": "0.2.3"
         }
       },
       {
@@ -24,8 +24,8 @@
         "repositoryURL": "https://github.com/musesum/Tr3.git",
         "state": {
           "branch": null,
-          "revision": "0bdc9f732387857d61b473c58a4628be16cae8b4",
-          "version": "0.2.4"
+          "revision": "adcb7e1902d61dab1301dbca9f084f2c6091e5a9",
+          "version": "0.2.5"
         }
       },
       {
